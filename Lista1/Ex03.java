@@ -10,8 +10,8 @@ class Ex03 {
   public static void main(String[] args) {
     Scanner read = new Scanner(System.in);
     System.out.print("Digite um número: ");
-
     float num = read.nextFloat();
+
     float sum = num * num;
     System.out.printf("Quadrado do número informado: %.2f", sum);
   }  
