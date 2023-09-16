@@ -1,13 +1,13 @@
 /*
-Desenvolva o algoritmo para converter uma temperatura em graus Fahrenheit para
-graus Celsius.
-A fórmula para conversão é a seguinte:
+  Desenvolva o algoritmo para converter uma temperatura em graus Fahrenheit para
+  graus Celsius.
+  A fórmula para conversão é a seguinte:
 
-C/5 = F - 32 / 9
+  C/5 = F - 32 / 9
 
-Onde:
-C = temperatura em graus Celsius;
-F = temperatura em graus Fahrenheit. 
+  Onde:
+  C = temperatura em graus Celsius;
+  F = temperatura em graus Fahrenheit. 
 */
 
 import java.util.Scanner;
