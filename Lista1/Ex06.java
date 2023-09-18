@@ -2,8 +2,8 @@
   Desenvolva o algoritmo de um programa para calcular a média de duas notas das
   avaliações de um aluno.
 */
-import java.util.Scanner;
 
+import java.util.Scanner;
 class Ex06 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
