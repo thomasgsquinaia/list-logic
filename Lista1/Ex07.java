@@ -5,7 +5,6 @@
   calculado.
 
   fórmula utilizada para encontrar o tempo : DeltaT = DeltaS / Vm
-  
 */
 import java.util.Scanner;
 
