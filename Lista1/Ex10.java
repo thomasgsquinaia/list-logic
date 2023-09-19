@@ -28,19 +28,20 @@ class Ex10 {
     int pessoasPagantes = reader.nextInt();
     
     int publico = pessoasSocias + pessoasNaoPagantes + pessoasPagantes;
-
     float totalIngressoSocio = valorIngresso * pessoasSocias;
-    float descontoIngressoSocio = (totalIngressoSocio - (valorIngresso * 0.3f));
-
+    float totIngressoComDescSocio = totalIngressoSocio - (totalIngressoSocio * 0.3f);
+    
     float totalIngressoPagante = valorIngresso * pessoasPagantes;
-    float rendaTotalComDesc = descontoIngressoSocio + totalIngressoPagante;
+    float rendaTotalComDesc = totIngressoComDescSocio + totalIngressoPagante;
 
-    float rendaPerdida = rendaTotalComDesc + (valorIngresso - descontoIngressoSocio);
-
-    System.out.printf("------------------------------------------\n", publico);
+    float rendaPerdida = totalIngressoSocio * 0.3f;
+    float rendaSemDesc = rendaTotalComDesc + rendaPerdida;
+ 
+    System.out.printf("------------------------------------------\n");
     System.out.printf("Público total do evento: %d\n", publico);
     System.out.printf("Renda total do evento com descontos: %.2f\n", rendaTotalComDesc);
     System.out.printf("Renda que deixou de ser arrecadada devido aos descontos e isenções: %.2f\n", rendaPerdida);
+    System.out.printf("Renda total sem descontos: %.2f\n", rendaSemDesc);
 
     reader.close();
   }  
