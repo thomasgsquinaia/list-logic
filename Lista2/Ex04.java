@@ -14,9 +14,10 @@ class Ex04 {
     System.out.print("Digite um valor inteiro: ");
     int v1 = reader.nextInt();
     System.out.print("Digite outro valor inteiro: ");
-    int v2 = reader.nextInt();
-
-    if (v1 > v2 && v2 < v1) {
+    int v2 = reader.nextInt();  
+    //???????? v1 > v2 == v2 < v1 ???
+    // 🙃
+    if (v1 > v2 && v2 < v1) { 
       System.out.printf("variavel_1 é maior:", v1);
     }
 
