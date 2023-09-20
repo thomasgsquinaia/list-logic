@@ -17,13 +17,13 @@ class Ex04 {
     int v2 = reader.nextInt();  
     //???????? v1 > v2 == v2 < v1 ???
     // 🙃
-    if (v1 > v2 && v2 < v1) { 
-      System.out.printf("variavel_1 é maior:", v1);
-    }
-
-    if (v2 > v1 && v1 < v2) {
-      System.out.printf("variavel_2 é maior: ", v2);
-    }
+    //confundi legal aqui meu bahh
+    if (v1 > v2) { 
+      System.out.printf("variavel_1 é maior: %d", v1);
+    } 
+    else {
+      System.out.printf("variavel_2 é maior: %d", v2);
+    }    
 
     reader.close();
   }
