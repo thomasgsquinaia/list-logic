@@ -18,18 +18,18 @@ class Ex06 {
   public static void main(String[] args) throws ParseException {
     Scanner reader = new Scanner(System.in);
 
-    // System.out.print("Digite a sua idade em anos: ");
-    // int idade = reader.nextInt();
-    // System.out.print("Digite quantos meses: ");
-    // int meses = reader.nextInt();
-    // System.out.print("Digite quantos dias: ");
-    // int dias = reader.nextInt();
+    System.out.print("Digite a sua idade em anos: ");
+    int idade = reader.nextInt();
+    System.out.print("Digite quantos meses: ");
+    int meses = reader.nextInt();
+    System.out.print("Digite quantos dias: ");
+    int dias = reader.nextInt();
 
-    // int diasDeVida = (idade * 365) + (meses * 30) + dias;
-    // System.out.printf("Você tem %d de vida\n", diasDeVida);
+    int diasDeVida = (idade * 365) + (meses * 30) + dias;
+    System.out.printf("Você tem %d de vida\n", diasDeVida);
 
     System.out.println("----------------------------------------------");
-    System.out.print("Digite a sua data de nascimento: \n");
+    System.out.print("Digite a sua data de nascimento:");
     String dataNiver = reader.next();
     Date aniversario = new SimpleDateFormat("dd/MM/yyy").parse(dataNiver);
     Date dataAtual = new Date();
@@ -41,15 +41,17 @@ class Ex06 {
     LocalDate localAtual = dataAtual.toInstant()
         .atZone(ZoneId.systemDefault())
         .toLocalDate();
+
+    //test
+    int mes = localDate.getMonthValue();
+    int diasDoMes = localDate.getDayOfMonth();
     int anoNiver = localDate.getYear();
     int anoAtual = localAtual.getYear();
-
     int calc = anoAtual - anoNiver;
-    int diasVidaDate = calc * 365;
+    int diasVidaDate = (calc * 365) + (mes * 30) + diasDoMes;
 
     System.out.printf("Dias de vida: %d", diasVidaDate);
 
     reader.close();
-
   }
 }
