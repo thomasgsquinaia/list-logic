@@ -8,12 +8,14 @@ import java.util.Scanner;
 
 class Ex01 {
   public static void main(String[] args) {
-    Scanner read = new Scanner(System.in);
+    Scanner reader = new Scanner(System.in);
     System.out.println("Digite um número: ");
-    int num = read.nextInt();
+    int num = reader.nextInt();
     
     int antecessor= num - 1 ;
     System.out.printf("Número digitado inicialmente: %d\n", num);
     System.out.printf("Antecessor: %d", antecessor);
+
+    reader.close();
   } 
 }

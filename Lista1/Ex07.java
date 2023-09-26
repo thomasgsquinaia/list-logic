@@ -18,5 +18,7 @@ class Ex07 {
 
     float tempo = distancia / velocidadeMedia;
     System.out.printf("O tempo gasto é: %.2fHoras", tempo);    
+
+    reader.close();
   }
 }

@@ -20,5 +20,7 @@ class Ex05 {
 
     float convert = (tempFahr - 32) * 5 / 9;
     System.out.printf("Temperatura em Celsius: %.2f", convert);  
+
+    reader.close();
   }
 }

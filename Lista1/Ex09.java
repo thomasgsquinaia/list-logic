@@ -33,6 +33,8 @@ class Ex09 {
     float calcPessoasGramas = ((qtdHomem * 400) + (qtdMulher * 320) + (qtdCrianca * 200)); 
     float caltTotal = calcPessoasGramas + (calcPessoasGramas * margemSeguranca);
     System.out.printf("A quantidade de carne em gramas será de: %.2f", caltTotal);
+    
+    reader.close();
   }
 }
 

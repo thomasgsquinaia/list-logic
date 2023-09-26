@@ -32,5 +32,7 @@ class Ex08 {
         System.out.printf("Percentual de votos válidos: %.2f%%\n", percentualVotosValidos);
         System.out.printf("Percentual de votos brancos: %.2f%%\n", percentualVotosBrancos);
         System.out.printf("Percentual de votos nulos: %.2f%%\n", percentualVotosNulos);
+
+        reader.close();
     }
 }
