@@ -14,6 +14,8 @@ class Ex06 {
 
     float media = (notaUm + notaDois) / 2;
     System.out.printf("Média do aluno: %.2f", media);
+
+    reader.close();
   }
 }
 
