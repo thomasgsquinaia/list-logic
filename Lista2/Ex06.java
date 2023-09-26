@@ -31,7 +31,7 @@ class Ex06 {
     System.out.println("----------------------------------------------");
     System.out.print("Digite a sua data de nascimento:");
     String dataNiver = reader.next();
-    Date aniversario = new SimpleDateFormat("dd/MM/yyy").parse(dataNiver);
+    Date aniversario = new SimpleDateFormat("dd/MM/yyyy").parse(dataNiver);
     Date dataAtual = new Date();
 
     LocalDate localDate = aniversario.toInstant()
@@ -42,7 +42,6 @@ class Ex06 {
         .atZone(ZoneId.systemDefault())
         .toLocalDate();
 
-    //test
     int mes = localDate.getMonthValue();
     int diasDoMes = localDate.getDayOfMonth();
     int anoNiver = localDate.getYear();
