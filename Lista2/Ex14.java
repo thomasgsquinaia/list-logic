@@ -14,7 +14,7 @@ import java.util.Scanner;
 */
 
 public class Ex14 {
-  public static void main(String[] args)  throws ParseException  {
+  public static void main(String[] args) throws ParseException  {
     Scanner reader = new Scanner(System.in);
 
     System.out.print("Digite o seu ano de nascimento: ");
@@ -34,7 +34,7 @@ public class Ex14 {
     int anoNiver = localNiver.getYear();
     int anoEleitor = anoAtual - anoNiver;
 
-    if(anoEleitor < 18) {
+    if(anoEleitor < 16) {
       System.out.println("----------------------------------");
       System.out.print("Esse ano você não podera votar");
     } 
