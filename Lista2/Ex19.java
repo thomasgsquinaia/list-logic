@@ -9,7 +9,7 @@ import java.util.Scanner;
   descontada a área ocupada por portas e janelas). Cada caixa de azulejos possui 1.5m2.
 */
 
-public class Ex019 {
+public class Ex19 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
     

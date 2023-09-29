@@ -12,7 +12,7 @@ import java.util.Scanner;
   Calcule e escreva:
       o salário final do vendedor.
  */
-public class Ex018 {
+public class Ex18 {
   public static void main(String[] args)  {
     Scanner reader = new Scanner(System.in);
 
