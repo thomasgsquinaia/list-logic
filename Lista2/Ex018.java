@@ -25,7 +25,7 @@ public class Ex018 {
     System.out.print("O salário fixo do funcionário: ");
     float salarioFixoFuncionario = reader.nextFloat();
 
-    System.out.print("Valor recebido por carro vendido: ");
+    System.out.print("Valor recebido por carro vendido (comissão por venda de cada carro): ");
     float valorRecebidoPorCarro = reader.nextFloat();
 
     float valorDeVendaTot = numVendidos * totVendasFuncionario;
