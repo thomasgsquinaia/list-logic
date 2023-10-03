@@ -31,11 +31,11 @@ public class Ex21 {
 
     float calcMetrosPercorridos = metrosPista * nVoltasPercorridas;
     float litrosGastos = calcMetrosPercorridos / consumoKmLitro;
-    float reabastecimento = litrosGastos / nReabastecimentos;
+    float primeiroReabastecimentoLitros = litrosGastos / nReabastecimentos;
 
 
     System.out.println("-----------------------------------------------------");
-    System.out.printf("Número mínimo de litros necessários \npara percorrer até o primeiro reabastecimento: %.2f litros",reabastecimento);
+    System.out.printf("Número mínimo de litros necessários \npara percorrer até o primeiro reabastecimento: %.2f litros", primeiroReabastecimentoLitros);
 
     reader.close();
   }
