@@ -34,47 +34,37 @@ public class Ex24 {
     System.out.print("Digite a idade de outra mulher: ");
     int idadeMulherDois = reader.nextInt();
 
-    System.out.println("----------------------------------");
-
-    // if(idadeHomemUm > idadeHomemDois && idadeMulherUm < idadeMulherDois) {
-    //   int sum = (idadeHomemUm + idadeMulherUm);
-    //   System.out.printf("%d", sum);
-    // }
-    // if(idadeHomemUm < idadeMulherDois && idadeMulherUm < idadeMulherDois) {
-    //   int sumDois = (idadeHomemUm * idadeMulherDois);
-    //   System.out.printf("%d", sumDois);
-    // }
-    
-    System.out.println("----------------------------------");
     if(idadeHomemUm > idadeHomemDois) {
       homemMaisVelho = idadeHomemUm;
     }
     else {
       homemMaisVelho = idadeHomemDois;
     }
-
     if(idadeHomemUm < idadeHomemDois) {
       homemMaisNovo = idadeHomemUm;
     }
     else {
       homemMaisNovo = idadeHomemDois;
     }
-
     if(idadeMulherUm > idadeMulherDois) {
       mulherMaisVelha = idadeMulherUm;
     } 
     else {
       mulherMaisVelha = idadeMulherDois;
     }
-
     if(idadeMulherUm < idadeMulherDois) {
       mulherMaisNova = idadeMulherUm;
     } 
     else {
       mulherMaisNova = idadeMulherDois;
     }
+    int somatorioIdade = homemMaisVelho + mulherMaisNova;
+    int produtoIdade = homemMaisNovo * mulherMaisVelha;
 
-    System.out.printf("\nHomem mais velho: %d\n Homem mais novo: %d\n Mulher mais velha: %d\n Mulher mais nova: %d", homemMaisVelho ,homemMaisNovo, mulherMaisVelha ,mulherMaisNova);
+    System.out.print("----------------------------------\n");
+    System.out.printf("\nSomatório das idades: %d\n Produto das idades: %d\n", somatorioIdade, produtoIdade);
+    System.out.print("----------------------------------\n");
+    System.out.printf("Homem mais velho: %d\n Homem mais novo: %d\n Mulher mais velha: %d\n Mulher mais nova: %d", homemMaisVelho ,homemMaisNovo, mulherMaisVelha ,mulherMaisNova);
     
     reader.close();
   }
