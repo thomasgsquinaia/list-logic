@@ -21,7 +21,10 @@ import java.util.Scanner;
 public class Ex24 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
-
+    int homemMaisVelho = 0;
+    int homemMaisNovo = 0;
+    int mulherMaisVelha = 0;
+    int mulherMaisNova = 0;
     System.out.print("Digite a idade de um homem: ");
     int idadeHomemUm = reader.nextInt();
     System.out.print("Digite a idade de outro homem: ");
@@ -44,22 +47,34 @@ public class Ex24 {
     
     System.out.println("----------------------------------");
     if(idadeHomemUm > idadeHomemDois) {
-      System.out.printf("Homem mais velho: %d\n", idadeHomemUm);
-      System.out.printf("Homem mais novo: %d\n", idadeHomemDois);
+      homemMaisVelho = idadeHomemUm;
     }
     else {
-      System.out.printf("Homem mais velho: %d\n", idadeHomemDois);
-      System.out.printf("Homem mais novo: %d\n", idadeHomemUm);
+      homemMaisVelho = idadeHomemDois;
+    }
+
+    if(idadeHomemUm < idadeHomemDois) {
+      homemMaisNovo = idadeHomemUm;
+    }
+    else {
+      homemMaisNovo = idadeHomemDois;
     }
 
     if(idadeMulherUm > idadeMulherDois) {
-      System.out.printf("Mulher mais velha: %d\n", idadeMulherUm);
-      System.out.printf("Mulher mais nova: %d\n", idadeMulherDois);
+      mulherMaisVelha = idadeMulherUm;
     } 
     else {
-      System.out.printf("Mulher mais velha: %d\n", idadeMulherDois);
-      System.out.printf("Mulher mais nova: %d\n", idadeMulherUm);
+      mulherMaisVelha = idadeMulherDois;
     }
+
+    if(idadeMulherUm < idadeMulherDois) {
+      mulherMaisNova = idadeMulherUm;
+    } 
+    else {
+      mulherMaisNova = idadeMulherDois;
+    }
+
+    System.out.printf("\nHomem mais velho: %d\n Homem mais novo: %d\n Mulher mais velha: %d\n Mulher mais nova: %d", homemMaisVelho ,homemMaisNovo, mulherMaisVelha ,mulherMaisNova);
     
     reader.close();
   }
