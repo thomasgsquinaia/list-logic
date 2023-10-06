@@ -62,9 +62,9 @@ public class Ex24 {
     int produtoIdade = homemMaisNovo * mulherMaisVelha;
 
     System.out.print("----------------------------------\n");
-    System.out.printf("\nSomatório das idades: %d\n Produto das idades: %d\n", somatorioIdade, produtoIdade);
+    System.out.printf("Somatório das idades: %d\nProduto das idades: %d\n", somatorioIdade, produtoIdade);
     System.out.print("----------------------------------\n");
-    System.out.printf("Homem mais velho: %d\n Homem mais novo: %d\n Mulher mais velha: %d\n Mulher mais nova: %d", homemMaisVelho ,homemMaisNovo, mulherMaisVelha ,mulherMaisNova);
+    System.out.printf("Homem mais velho: %d\nHomem mais novo: %d\nMulher mais velha: %d\nMulher mais nova: %d", homemMaisVelho ,homemMaisNovo, mulherMaisVelha ,mulherMaisNova);
     
     reader.close();
   }
