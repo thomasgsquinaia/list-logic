@@ -28,7 +28,7 @@ public class Ex02 {
     if(v3 > v1 && v3 > v2) {
       maiorValor = v3;
     }   
-    System.out.printf("O maior valor é: %.2f", maiorValor);
+    System.out.printf("O maior valor é: %.1f", maiorValor);
 
     reader.close();
    }
