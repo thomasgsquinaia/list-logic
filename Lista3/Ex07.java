@@ -37,7 +37,7 @@ public class Ex07 {
       combustivel =  valorPagoGasolina;
     }
     
-    System.out.printf("Valor pago: %s", combustivel);
+    System.out.printf("Valor pago: %.2f", combustivel);
 
     reader.close();
   }  
