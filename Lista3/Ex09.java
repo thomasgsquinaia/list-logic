@@ -45,7 +45,6 @@ public class Ex09 {
     
     if(mediaNotas >= 6.0f) {
       System.out.printf("Aprovado\nmedia:%.2f", mediaNotas);
-
     }
     if(mediaNotas >= 3.0f && mediaNotas < 6.0f) {
       System.out.printf("Exame\nmedia:%.2f", mediaNotas);
