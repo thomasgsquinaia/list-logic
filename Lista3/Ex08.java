@@ -20,13 +20,24 @@ public class Ex08 {
 
     String codigo = "a1234";
     String senha = "9999";
+    String codigoUser = "";
+    String senhaUser = "";
 
     System.out.print("Digite o código de usuário: ");
-    String codigoUser = reader.next();
-    System.out.print("Digite a senha de usuário: ");
-    String senhaUser = reader.next();
-    
-  
+    codigoUser = reader.next();
+    if(codigoUser != codigo) {
+      System.out.println("Usuário inválido!");
+    }
+    if(codigoUser == codigo) {
+      System.out.print("Digite a senha de usuário: ");
+      senhaUser = reader.next();
+      if(senhaUser != senha) {
+        System.out.println("Senha incorreta");
+      }   
+    }
+    if(senhaUser == senha){ 
+      System.out.println("Acesso permitido");
+    }
 
     reader.close();
   }
