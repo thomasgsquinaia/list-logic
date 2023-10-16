@@ -25,17 +25,17 @@ public class Ex08 {
 
     System.out.print("Digite o código de usuário: ");
     codigoUser = reader.next();
-    if(codigoUser != codigo) {
+    if(!codigoUser.equals(codigo)) {
       System.out.println("Usuário inválido!");
     }
-    if(codigoUser == codigo) {
+    if(codigoUser.equals(codigo)) {
       System.out.print("Digite a senha de usuário: ");
       senhaUser = reader.next();
-      if(senhaUser != senha) {
+      if(!senhaUser.equals(senha)) {
         System.out.println("Senha incorreta");
       }   
     }
-    if(senhaUser == senha){ 
+    if(senhaUser.equals(senha)){ 
       System.out.println("Acesso permitido");
     }
 
