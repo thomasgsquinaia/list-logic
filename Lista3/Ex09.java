@@ -34,9 +34,7 @@ public class Ex09 {
     p2 = reader.nextFloat();
     System.out.println("Digite a nota da avaliação optativa: (caso nao tenha nota digite 0)");
     provaOptativa = reader.nextFloat();
-    
-    // considerando que a prova optativa substitui a nota
-    // mais baixa entre as duas primeiras avaliações. 
+
     if(p1 < p2) {
       p1 = provaOptativa;//menor
     }
