@@ -43,16 +43,11 @@ public class Ex09 {
     if(p2 < p1) {
       p2 = provaOptativa;// menor
     }
-    // if(provaOptativa == 0) {
-    //   provaOptativa = -1;
-    //   mediaNotas = ((p1 + p2) / 2) - provaOptativa;
-    // }
+    if(provaOptativa == 0) { 
+      provaOptativa = -1;
+    }
 
     mediaNotas = ((p1 + p2) / 2);
-    System.out.printf("p1: %f\n",p1);
-    System.out.printf("p2: %f\n",p2);
-    System.out.printf("provaOp: %f\n",provaOptativa);
-    System.out.println("--------------------------------------------");
 
     if(mediaNotas >= 6f) {
       System.out.printf("Aprovado\nmedia:%.2f", mediaNotas);
