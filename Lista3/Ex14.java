@@ -19,10 +19,10 @@ public class Ex14 {
     System.out.println("Digite a nota da primeira avaliação: ");
     float p1 = reader.nextFloat();
     
-    System.out.println("Digite a nota da primeira avaliação: ");
+    System.out.println("Digite a nota da segunda avaliação: ");
     float p2 = reader.nextFloat();
 
-    System.out.println("Digite a nota da primeira avaliação: ");
+    System.out.println("Digite a nota da terceira avaliação: ");
     float p3 = reader.nextFloat();
 
     float media = (p1 + p2 + p3) / 3;
