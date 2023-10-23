@@ -16,13 +16,15 @@ public class Ex04 {
     float saldo = 0.00f;
     float saque = 0.00f;
     float deposito = 0.00f;
+    float saldoDeposito = 0.00f;
+
 
     System.out.println("Clique no botão 1 para entrar:");
     opcao = reader.next();
 
     while(!opcao.equals("d")) {
       System.out.println("=============================");
-      System.out.println("==========BANCO TRUE=========");
+      System.out.println("=========BANCO BONITO========");
       System.out.println("Escolha as opções");
       System.out.println("a - consultar saldo");
       System.out.println("b - saque");
@@ -36,19 +38,23 @@ public class Ex04 {
         System.out.print("=============================\n");
         System.out.print("Digite quando você vai sacar:\n");
         saque = reader.nextFloat();
+        if(saque > saldo) {
+          System.out.println("VOCÊ NÃO TEM ISSO TUDO PARA SACAR MEU BROTHER!!!");
+        } else { 
+          saldo -= saque;
+        }
       }
       if(opcao.equals("c")) {
         System.out.print("=============================\n");
         System.out.print("Digite quando você vai depositar:\n");
         deposito = reader.nextFloat();
+        saldo += deposito;
       }
       
-      saldo = deposito - saque;
       if(opcao.equals("a")) {
         System.out.print("=============================\n");
         System.out.printf("Seu saldo é: R$%.2f\n", saldo);
       }
-
     }
 
     reader.close();
