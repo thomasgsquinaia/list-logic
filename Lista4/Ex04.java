@@ -39,7 +39,8 @@ public class Ex04 {
         saque = reader.nextFloat();
         if(saque > saldo) {
           System.out.println("VOCÊ NÃO TEM ISSO TUDO PARA SACAR MEU BROTHER!!!");
-        } else { 
+        } 
+        else { 
           saldo -= saque;
         }
       }
