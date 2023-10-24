@@ -16,7 +16,6 @@ public class Ex04 {
     float saldo = 0.00f;
     float saque = 0.00f;
     float deposito = 0.00f;
-    float saldoDeposito = 0.00f;
 
 
     System.out.println("Clique no botão 1 para entrar:");
