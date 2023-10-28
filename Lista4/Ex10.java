@@ -27,7 +27,6 @@ public class Ex10 {
 
     System.out.printf("Salário válido\n=> %.2f", salarioInput);
 
-
     reader.close();
   }
 }
