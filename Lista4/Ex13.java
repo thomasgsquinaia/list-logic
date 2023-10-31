@@ -19,24 +19,41 @@ public class Ex13 {
     float maior2 = 0;
     float media = 0;
 
+    System.out.print("Digite um número: ");
     n1 = reader.nextFloat();
+    System.out.print("Digite um número: ");
     n2 = reader.nextFloat();
+    System.out.print("Digite um número: ");
     n3 = reader.nextFloat();
+
 
     if (n1 > n2 && n1 > n3) {
       maior1 = n1;
-      maior2 = n2;
+      if(n2 > n3) {
+        maior2 = n2;
+      } else { 
+        maior2 = n3;
+      }
     }
     if (n2 > n1 && n2 > n3) {
       maior1 = n2;
-      maior2 = n1;
+      if(n1 > n3) {
+        maior2 = n1;
+      } else { 
+        maior2 = n3;
+      }
     }
     if (n3 > n1 && n3 > n2) {
       maior1 = n3;
-      maior2 = n1;
+      if(n1 > n2) {
+        maior2 = n1;
+      } else { 
+        maior2 = n2;
+      }
     }
-
+    
     media = (maior1 + maior2) / 2;
+    System.out.println("===========");
     System.out.println(maior1);
     System.out.println(maior2);
 
