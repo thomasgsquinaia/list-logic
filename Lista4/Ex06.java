@@ -12,25 +12,18 @@ public class Ex06 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
 
-    float i = 1;
     float num = 1;
-    float numLido = 1;
 
-    while(i <= 10) {
+    while(num >= 1 && num <= 10) {
       System.out.println("Digite um valor entre 1 e 10: ");
       num = reader.nextFloat();
-
-      if(num >= 1 && num <= 10) {
-        numLido+=num;
-        System.out.printf("Número digitado: %.0f\n",num);
+      System.out.printf("Número digitado: %.0f\n",num);
+     
+      while(num < 1 || num > 10) {
+        System.out.println("Digite outro número que seja entre 1 e 10");
+        num = reader.nextFloat();
       }
-      else {
-        System.out.println("Digite outro número");
-      }
-      
-      i++;
     }
-
     reader.close();
   }
   
