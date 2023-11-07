@@ -23,7 +23,6 @@ public class Ex17 {
     int horasTrabalhadas = 0;
     float valorHoraFuncionario = 0;
     float salarioBruto = 0;
-    float totSalario = 0;
 
     System.out.println("Quantos empregados trabalharam durante a semana?");
     qtdFuncionario = reader.nextInt();
