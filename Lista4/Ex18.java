@@ -44,8 +44,6 @@ public class Ex18 {
       if(menorIdade > n) {
         menorIdade=n;
       }
-      System.out.printf("Menor idade: %d\n", menorIdade);
-      System.out.printf("Maior idade: %d\n", maiorIdade);
     }
 
     System.out.println("----------------------------------------");
