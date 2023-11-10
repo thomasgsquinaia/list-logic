@@ -15,26 +15,34 @@ public class Ex18 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
 
-    int n = 0;
     float idadeMedia = 0;
-    int menorIdade = 0;
-    int maiorIdade = 0;
+    float n = 1;
+    float menorIdade = 0;
+    float maiorIdade = 0;
     int sum = 0;
+    float countPessoa = 0;
+    float media = 0;
 
-    n = reader.nextInt();
-    if (n == 0) {
-      System.out.println("Digite uma idade maior que 0");
-    }
     while (n != 0) {
-      System.out.println("Digite uma idade: ");
+      System.out.println("Digite uma idade maior que 0:");
       n = reader.nextInt();
       if(n == 0) {
-        System.out.println("Digite uma idade maior que 0");
+        break;
       }
-      sum += n;
+      sum+=n;
+      countPessoa++;
+      media=sum/countPessoa;
+
+      menorIdade=n;
+   
+      
     }
-    idadeMedia = sum / n;
-    System.out.println(idadeMedia);
+    System.out.println("----------------------------------------");
+    System.out.printf("número de pessoas: %.0f\n", countPessoa);
+    System.out.printf("média: %.2f\n", media);
+    System.out.printf("Menor idade: %.2f", menorIdade);
+    System.out.printf("Maior idade: %.2f\n", maiorIdade);
+ 
 
     reader.close();
   }
