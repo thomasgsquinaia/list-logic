@@ -17,24 +17,38 @@ public class Ex19 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
     
-    int i = 1;
+  
     int n=0;
-    int valor1=0;
+    int soma=1;
+    int pass=1;
+    int atual=1;
     
     // O RESULTADO MAIS O ANTERIOR
     //1,1,2,3,5,8,13,21,34,55...
 
     System.out.print("Digite um número: ");
     n=reader.nextInt();
-    for(i = 1; i <= n; i++){
-      // System.out.printf("to dentro %d\n",i);
-      valor1=valor1+i;
-
-      System.out.printf("valor1: %d\n",valor1);
-      System.out.printf("i: %d\n",i);
+    System.out.print("\n");
+    if(n == 1){
+      System.out.print("1");
     }
-
-
+    if(n == 2) {
+      System.out.print("1,1");
+    }
+    if(n > 2) {
+      System.out.print("1,1,");
+      for(int i = 1; i <= n - 2 ; i++){
+        
+        soma=pass+atual;
+        pass=atual;
+        atual=soma;
+  
+        System.out.printf("soma: %d,\n",soma);
+        System.out.printf("pass: %d,\n",pass);
+        System.out.printf("atual: %d,\n",atual);
+        System.out.println("------------------");
+      }
+    }
     reader.close();
   }
 }
