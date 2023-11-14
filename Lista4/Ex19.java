@@ -19,11 +19,11 @@ public class Ex19 {
     
     int i = 1;
     int n=0;
-    int ant=0;
     int valor1=0;
-    int valor2=1;
+    
     // O RESULTADO MAIS O ANTERIOR
-    //1+1=2+3=5+3=8...
+    //1,1,2,3,5,8,13,21,34,55...
+
     System.out.print("Digite um número: ");
     n=reader.nextInt();
     for(i = 1; i <= n; i++){
