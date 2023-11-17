@@ -13,8 +13,7 @@ public class Ex20 {
     Scanner reader = new Scanner(System.in);
 
     int tamanhoX = 1;
-    int tamanhoY = 1;
-    String aux = "*";
+    String aux = "";
 
     System.out.print("Digite o tamanho de um lado do quadrado: ");
     tamanhoX = reader.nextInt();
@@ -22,17 +21,15 @@ public class Ex20 {
     if (tamanhoX > 20) {
       System.out.println("Tamanho inválido");
     } else {
-      for (int i = 1; i < tamanhoX; i++) {
-        // for(int j = 1; j < tamanhoY; j++) {
-        //   aux+=tamanhoY;
-        // }
-        System.out.print(aux);
-        // printQuadrado = tamanho * tamanho;
-        // System.out.print(printQuadrado);
-
+      for (int i = 1; i <= tamanhoX; i++) {
+        aux+="*";
       }
-      System.out.println(aux);
+      for(int j = 1; j <= tamanhoX; j++) {
+        System.out.println(aux);
+      }
     }
+
+    reader.close();
   }
 
 }
