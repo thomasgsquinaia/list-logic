@@ -19,16 +19,15 @@ public class Ex21 {
     float somaPar = 0;
     float somaImpar = 0;
 
-    while(n > -1) {
+    while (n > -1) {
       System.out.println("Digite um número");
       n = reader.nextInt();
-      if(n % 2 == 0) {
-        somaPar+=n;
-        mediaPares=somaPar/n;
-      }
-      if(n % 2 == 1) {
-        somaImpar+=n;
-        mediaImpares=somaImpar/n;
+      if (n % 2 == 0) {
+        somaPar += n;
+        mediaPares = somaPar / (float) n;
+      } else {
+        somaImpar += n;
+        mediaImpares = somaImpar / (float) n;
       }
     }
 
