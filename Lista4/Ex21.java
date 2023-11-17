@@ -13,6 +13,28 @@ public class Ex21 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
 
+    int n = 1;
+    float mediaPares = 0;
+    float mediaImpares = 0;
+    float somaPar = 0;
+    float somaImpar = 0;
+
+    while(n > -1) {
+      System.out.println("Digite um número");
+      n = reader.nextInt();
+      if(n % 2 == 0) {
+        somaPar+=n;
+        mediaPares=somaPar/n;
+      }
+      if(n % 2 == 1) {
+        somaImpar+=n;
+        mediaImpares=somaImpar/n;
+      }
+    }
+
+    System.out.println(mediaPares);
+    System.out.println(mediaImpares);
+
     reader.close();
   }
 
