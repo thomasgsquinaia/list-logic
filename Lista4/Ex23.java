@@ -16,15 +16,15 @@ public class Ex23 {
     float percaPorcentagem = 0.25f;
     float massa = 0;
     float tempo = 0;
- 
+
     while(massa < 0.10) {
       System.out.println("Digite o peso em gramas do elemento radioativo: ");
       massa = reader.nextFloat();
-      massa = massa / percaPorcentagem;
+      massa = massa - (massa * percaPorcentagem);
       tempo=tempo+30;
+      System.out.printf("Tempo: %.0f", tempo);
     }
 
-    System.out.printf("Tempo: %.0f", tempo);
 
     reader.close();
   }
