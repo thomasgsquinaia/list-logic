@@ -8,7 +8,6 @@ import java.util.Scanner;
   Escrever um algoritmo em Java que calcule iterativamente e imprima o tempo
   necessário para que a massa deste material se torne menor que 0,10 grama.
 */
-
 public class Ex23 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
@@ -17,15 +16,13 @@ public class Ex23 {
     float massa = 0;
     float tempo = 0;
 
-    while(massa < 0.10) {
-      System.out.println("Digite o peso em gramas do elemento radioativo: ");
-      massa = reader.nextFloat();
+    System.out.println("Digite o peso em gramas do elemento radioativo: ");
+    massa = reader.nextFloat();
+    while(massa > 0.10) {
       massa = massa - (massa * percaPorcentagem);
       tempo=tempo+30;
-      System.out.printf("Tempo: %.0f", tempo);
     }
-
-
+    System.out.printf("Tempo: %.0f segundos", tempo);
     reader.close();
   }
 
