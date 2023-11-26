@@ -15,7 +15,45 @@ public class Ex24 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
 
+    String nome = "";
+    String sexo = "";
+    int idade = 0;
+    float peso = 0;
+    float altura = 0;
+    float mulherMaisPesada = 0;
+    float homemMaisAlto = 0;
+    float media = 0;
+    float sumIdade = 0;
+
+    while (nome != "@") {
+      System.out.println("Digite o seu nome: ");
+      nome = reader.next();
+      if (nome.equals("@")) {
+        break;
+      }
+      System.out.println("Peso:");
+      peso = reader.nextFloat();
+      System.out.println("Altura:");
+      altura = reader.nextFloat();
+      System.out.println("Idade:");
+      idade = reader.nextInt();
+      System.out.println("Digite o seu sexo Mulher [M] ou Homem [H]");
+      sexo = reader.next();
+      if (sexo.equals("M")) {
+        if (mulherMaisPesada < peso) {
+          mulherMaisPesada = peso;          
+        }
+      } else {
+        if (homemMaisAlto < peso) {
+          homemMaisAlto = peso;
+        }
+      }
+      sumIdade += idade;
+      media = sumIdade / idade;
+    }
+    System.out.printf("O atleta do sexo masculino mais alto %f\n", homemMaisAlto);
+    System.out.printf("A atleta do sexo feminino mais pesada %f\n", mulherMaisPesada);
+    System.out.printf("A média de idade dos atletas: %f\n", media);
     reader.close();
   }
-
 }
