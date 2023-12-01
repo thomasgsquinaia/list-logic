@@ -13,19 +13,23 @@ public class Ex25 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
 
-    int num = 0;
-    int mult = 0;
-    int divi = 0;
-
+    float num  = 0f;
+    float mult = 0f;
+    float divi = 0f;
     
-    while(num != 0 || num < 0) {
+    System.out.println("digite um número: ");
+    num = reader.nextFloat();
+    while(num != 0) {
       System.out.println("digite um número: ");
-      num = reader.nextInt();
-      
+      num = reader.nextFloat();
+      if(num == 0 || num < 0) {
+        break;
+      }
+
       mult = num * num;
       divi = mult/num;
-
-      if(divi == num) {
+    
+      if(divi == 0) {
         System.out.println("Quadrado perfeito");
       }
       else {
