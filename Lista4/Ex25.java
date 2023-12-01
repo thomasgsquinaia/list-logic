@@ -28,8 +28,10 @@ public class Ex25 {
       quadrado = "Não é quadrado perfeito!";
       for (int i = 1; i <= num; i++) {
         multiplicador = i * i;
-        System.out.printf("%.0f\n",multiplicador);
+        System.out.printf("i: %d\n",i);
+        System.out.printf("multiplicador: %.0f\n",multiplicador); 
         if (multiplicador == num ) {
+          System.out.printf("dentro %.0f\n",multiplicador); 
           quadrado = "Quadrado perfeito!";
           break;
         }
