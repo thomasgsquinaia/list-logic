@@ -20,6 +20,7 @@ public class Ex26 {
     Scanner reader = new Scanner(System.in);
 
     
+    
     reader.close();
   }
 }

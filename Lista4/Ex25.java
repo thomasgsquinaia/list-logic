@@ -1,6 +1,7 @@
 package Lista4;
 
 import java.util.Scanner;
+
 /*
   Escreva um algoritmo em Java que receba vários números e verifique se eles são ou
   não quadrados perfeitos. O algoritmo termina a execução quando for digitado um
@@ -10,34 +11,30 @@ import java.util.Scanner;
 */
 
 public class Ex25 {
+
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
 
-    float num  = 0f;
-    float mult = 0f;
-    float divi = 0f;
-    float resto = 0f;
-    
-    System.out.println("digite um número: ");
-    num = reader.nextFloat();
-    while(num != 0) {
-      System.out.println("digite um número: ");
+    float num = 1f;
+    String quadrado = "";
+    float multiplicador = 0f;
+
+    while (num != 0) {
+      System.out.print("digite um número: ");
       num = reader.nextFloat();
-      if(num == 0 || num < 0) {
+      if (num == 0 || num < 0) {
         break;
       }
-
-      mult = num * num;
-      divi = mult/num;
-      resto = divi % num;
-
-      if(resto == 0) {
-        System.out.println("Quadrado perfeito");
+      quadrado = "Não é quadrado perfeito!";
+      for (int i = 1; i <= num; i++) {
+        multiplicador = i * i;
+        System.out.printf("%.0f\n",multiplicador);
+        if (multiplicador == num ) {
+          quadrado = "Quadrado perfeito!";
+          break;
+        }
       }
-      else {
-        System.out.println("Quadrado não perfeito");
-      }
-
+      System.out.printf("Número: %.0f\nPerfeito ou não? %s\n",num,quadrado);
     }
 
     reader.close();
