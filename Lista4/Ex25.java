@@ -16,6 +16,7 @@ public class Ex25 {
     float num  = 0f;
     float mult = 0f;
     float divi = 0f;
+    float resto = 0f;
     
     System.out.println("digite um número: ");
     num = reader.nextFloat();
@@ -28,8 +29,9 @@ public class Ex25 {
 
       mult = num * num;
       divi = mult/num;
-    
-      if(divi == 0) {
+      resto = divi % num;
+
+      if(resto == 0) {
         System.out.println("Quadrado perfeito");
       }
       else {
