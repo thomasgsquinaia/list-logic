@@ -19,7 +19,12 @@ public class Ex26 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
 
-    
+    int numCandidatoVencedor;
+    int numVotosEmBranco;
+    int numVotosNulos;
+    int numEleitoresForamAsUrnas;
+
+    while(){}
     
     reader.close();
   }
