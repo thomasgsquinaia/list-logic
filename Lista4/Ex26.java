@@ -19,11 +19,14 @@ public class Ex26 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
 
-    int numCandidatoVencedor=0;
-    int numVotosEmBranco=0;
+    int voto=0;
+    int candidato1=0;
+    int candidato2=0;
+    int candidato3=0;
     int numVotosNulos=0;
+    int numVotosEmBranco=0;
+    int numCandidatoVencedor=0;
     int numEleitoresForamAsUrnas=0;
-    int voto=1;
 
     
     while(voto != -1){
@@ -33,7 +36,7 @@ public class Ex26 {
         break;
       }
 
-
+      
       
     }
     
