@@ -19,12 +19,23 @@ public class Ex26 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
 
-    int numCandidatoVencedor;
-    int numVotosEmBranco;
-    int numVotosNulos;
-    int numEleitoresForamAsUrnas;
+    int numCandidatoVencedor=0;
+    int numVotosEmBranco=0;
+    int numVotosNulos=0;
+    int numEleitoresForamAsUrnas=0;
+    int voto=1;
 
-    while(){}
+    
+    while(voto != -1){
+      System.out.print("1-Vanderley | 2-Jonathan | 3-Caike | 4-Nulo | 5-Branco\nDigite o número do seu candidato: "); 
+      voto = reader.nextInt();
+      if(voto < 1 || voto > 5) {
+        break;
+      }
+
+
+      
+    }
     
     reader.close();
   }
