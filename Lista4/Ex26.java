@@ -51,7 +51,9 @@ public class Ex26 {
       if(voto == 5) {
         numVotosEmBranco++;
       }
-      numEleitoresForamAsUrnas++;
+      if(voto > 0 && voto < 6 ) {
+        numEleitoresForamAsUrnas++;
+      }
       if(candidato1 > candidato2 && candidato1 > candidato3) {
         numCandidatoVencedor=candidato1;
       }
@@ -61,8 +63,6 @@ public class Ex26 {
       if(candidato3 > candidato1 && candidato3 > candidato2) {
         numCandidatoVencedor=candidato3;
       }
-
-
     }
     System.out.printf("Números de votos total ao eleitor ganhador: %d\n",numCandidatoVencedor);
     System.out.printf("Votos nulos: %d\n",numVotosNulos);
