@@ -25,7 +25,7 @@ public class Ex26 {
     int candidato3=0;
     int numVotosNulos=0;
     int numVotosEmBranco=0;
-    int numCandidatoVencedor=0;
+    int candidatoVencedor=0;
     int numEleitoresForamAsUrnas=0;
 
     
@@ -55,16 +55,28 @@ public class Ex26 {
         numEleitoresForamAsUrnas++;
       }
       if(candidato1 > candidato2 && candidato1 > candidato3) {
-        numCandidatoVencedor=candidato1;
+        if(candidato1 == candidato2 || candidato1 == candidato3) {
+          System.out.println("Não pode ter empate!");
+          continue;
+        }
+        candidatoVencedor=1;
       }
       if(candidato2 > candidato1 && candidato2 > candidato3) {
-        numCandidatoVencedor=candidato2;
+         if(candidato2 == candidato1 || candidato2 == candidato3) {
+          System.out.println("Não pode ter empate!");
+          continue;
+        }
+        candidatoVencedor=2;
       }
       if(candidato3 > candidato1 && candidato3 > candidato2) {
-        numCandidatoVencedor=candidato3;
+         if(candidato3 == candidato1 || candidato3 == candidato2) {
+          System.out.println("Não pode ter empate!");
+          continue;
+        }
+        candidatoVencedor=3;
       }
     }
-    System.out.printf("Números de votos total ao eleitor ganhador: %d\n",numCandidatoVencedor);
+    System.out.printf("Cod do eleitor ganhador: %d\n",candidatoVencedor);
     System.out.printf("Votos nulos: %d\n",numVotosNulos);
     System.out.printf("Votos em Branco: %d\n",numVotosEmBranco);
     System.out.printf("Num de eleitores que foram as urnas: %d\n",numEleitoresForamAsUrnas);
