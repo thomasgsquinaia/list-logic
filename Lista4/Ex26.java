@@ -19,7 +19,7 @@ public class Ex26 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
 
-    int voto=0;
+    int voto=1;
     int candidato1=0;
     int candidato2=0;
     int candidato3=0;
@@ -27,9 +27,10 @@ public class Ex26 {
     int numVotosEmBranco=0;
     int candidatoVencedor=0;
     int numEleitoresForamAsUrnas=0;
+    boolean empate = false;
 
     
-    while(voto != -1){
+    while(voto != -1||empate){
       System.out.print("1-Vanderley | 2-Jonathan | 3-Caike | 4-Nulo | 5-Branco\nDigite um número menor que 1 ou maior que 5 para finalizar o programa!\nDigite o número do seu candidato: "); 
       voto = reader.nextInt();
       if(voto < 1 || voto > 5) {
@@ -51,31 +52,42 @@ public class Ex26 {
       if(voto == 5) {
         numVotosEmBranco++;
       }
+    
+      if(voto == -1) {
+        if(candidato1 > candidato2 && candidato1 > candidato3) {
+          if(candidato1 == candidato2 || candidato1 == candidato3) {
+            System.out.println("Não pode ter empate!");
+            empate=true;
+            continue;
+          }
+          candidatoVencedor=1;
+          continue;
+        }
+        if(candidato2 > candidato1 && candidato2 > candidato3) {
+           if(candidato2 == candidato1 || candidato2 == candidato3) {
+            System.out.println("Não pode ter empate!");
+            empate=true;
+            continue;
+          }
+          candidatoVencedor=2;
+          continue;
+        }
+        if(candidato3 > candidato1 && candidato3 > candidato2) {
+           if(candidato3 == candidato1 || candidato3 == candidato2) {
+            System.out.println("Não pode ter empate!");
+            empate=true;
+            continue;
+          }
+          candidatoVencedor=3;
+          continue;
+        }
+      }
       if(voto > 0 && voto < 6 ) {
         numEleitoresForamAsUrnas++;
       }
-      if(candidato1 > candidato2 && candidato1 > candidato3) {
-        if(candidato1 == candidato2 || candidato1 == candidato3) {
-          System.out.println("Não pode ter empate!");
-          continue;
-        }
-        candidatoVencedor=1;
-      }
-      if(candidato2 > candidato1 && candidato2 > candidato3) {
-         if(candidato2 == candidato1 || candidato2 == candidato3) {
-          System.out.println("Não pode ter empate!");
-          continue;
-        }
-        candidatoVencedor=2;
-      }
-      if(candidato3 > candidato1 && candidato3 > candidato2) {
-         if(candidato3 == candidato1 || candidato3 == candidato2) {
-          System.out.println("Não pode ter empate!");
-          continue;
-        }
-        candidatoVencedor=3;
-      }
+      empate=false;
     }
+    System.out.print("======================================\n");
     System.out.printf("Cod do eleitor ganhador: %d\n",candidatoVencedor);
     System.out.printf("Votos nulos: %d\n",numVotosNulos);
     System.out.printf("Votos em Branco: %d\n",numVotosEmBranco);
