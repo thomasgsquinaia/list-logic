@@ -36,8 +36,20 @@ public class Ex26 {
         break;
       }
 
-      
-      
+      if(voto == 1) {
+        candidato1++;
+      }
+      if(voto == 2) {
+        candidato2++;
+      }
+      if(voto == 3) {
+        candidato3++;
+      }
+
+
+      System.out.println(candidato1);
+      System.out.println(candidato2);
+      System.out.println(candidato3);
     }
     
     reader.close();
