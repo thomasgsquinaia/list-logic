@@ -30,7 +30,7 @@ public class Ex26 {
 
     
     while(voto != -1){
-      System.out.print("1-Vanderley | 2-Jonathan | 3-Caike | 4-Nulo | 5-Branco\nDigite o número do seu candidato: "); 
+      System.out.print("1-Vanderley | 2-Jonathan | 3-Caike | 4-Nulo | 5-Branco\nDigite um número menor que 1 ou maior que 5 para finalizar o programa!\nDigite o número do seu candidato: "); 
       voto = reader.nextInt();
       if(voto < 1 || voto > 5) {
         break;
@@ -45,12 +45,29 @@ public class Ex26 {
       if(voto == 3) {
         candidato3++;
       }
+      if(voto == 4){
+        numVotosNulos++;
+      }
+      if(voto == 5) {
+        numVotosEmBranco++;
+      }
+      numEleitoresForamAsUrnas++;
+      if(candidato1 > candidato2 && candidato1 > candidato3) {
+        numCandidatoVencedor=candidato1;
+      }
+      if(candidato2 > candidato1 && candidato2 > candidato3) {
+        numCandidatoVencedor=candidato2;
+      }
+      if(candidato3 > candidato1 && candidato3 > candidato2) {
+        numCandidatoVencedor=candidato3;
+      }
 
 
-      System.out.println(candidato1);
-      System.out.println(candidato2);
-      System.out.println(candidato3);
     }
+    System.out.printf("Números de votos total ao eleitor ganhador: %d\n",numCandidatoVencedor);
+    System.out.printf("Votos nulos: %d\n",numVotosNulos);
+    System.out.printf("Votos em Branco: %d\n",numVotosEmBranco);
+    System.out.printf("Num de eleitores que foram as urnas: %d\n",numEleitoresForamAsUrnas);
     
     reader.close();
   }
