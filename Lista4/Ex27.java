@@ -32,14 +32,14 @@ public class Ex27 {
     n=reader.nextInt();
     n_vezes=reader.nextInt();
     while(n<=n_vezes||n>=fim_da_linha){
-      System.out.println("Digite um número: ");
-      n=reader.nextInt();
-      // n_vezes=reader.nextInt();
 
+      
       dobro = n * 2;
+      soma_antecessor = n - 1;
       
       System.out.printf("Dobro: %d\n", dobro);
       System.out.printf("Soma antecessor: %d\n", soma_antecessor);
+     
     }
 
     reader.close();

@@ -19,8 +19,40 @@ import java.util.Scanner;
 public class Ex28 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
-
     
+    float valor = 1f;
+    float cemzao = 100;
+    float cinquentao = 50;
+    float dezao = 10;
+    float cincao = 5;
+    float um_real = 1;
+    float valorRestoCem = 0;
+    float valorRestoCinquenta = 0;
+    float valorRestoDez = 0;
+    float valorRestoCinco = 0;
+    float valorRestoUmReal = 0;
+    
+    
+    while(valor!=0) {
+      System.out.print("Digite o valor: ");
+      valor=reader.nextInt();
+      if(valor==0){
+        break;
+      }
+      valorRestoCem=valor/cemzao;
+      valorRestoCinquenta=valor/cinquentao;
+      valorRestoDez=valor/cemzao;
+      valorRestoCinco=valor/cemzao;
+      valorRestoUmReal=valor/cemzao;
+
+      if(valorRestoCem == 0) {
+        cemzao++;
+      }
+      System.out.println(cemzao);
+      System.out.println(valorRestoCem);
+      
+
+    }
     reader.close();
   }
 }
