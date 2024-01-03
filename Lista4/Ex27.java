@@ -23,6 +23,7 @@ public class Ex27 {
     Scanner reader = new Scanner(System.in);
 
     int num = 0;
+    int i = 0;
     int n_vezes = 0;
     int dobro = 0;
     int soma_antecessor = 0;
@@ -34,9 +35,10 @@ public class Ex27 {
     System.out.println("Digite o numero de vezes: ");
     n_vezes=reader.nextInt();
 
-    while(num<=n_vezes&&num>fim_da_linha){
+    while(i<=n_vezes){
 
       System.out.println("passou aqui");
+      i++;
     }
     System.out.printf("Dobro: %d\n", dobro);
     System.out.printf("Soma antecessor: %d\n", soma_antecessor);
