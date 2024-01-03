@@ -22,25 +22,24 @@ public class Ex27 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
 
-    int n = 0;
+    int num = 0;
     int n_vezes = 0;
     int dobro = 0;
     int soma_antecessor = 0;
-    int fim_da_linha = 4;
+    int fim_da_linha = 100000;
 
     System.out.println("Digite um número: ");
-    n=reader.nextInt();
+    num=reader.nextInt();
+    
+    System.out.println("Digite o numero de vezes: ");
     n_vezes=reader.nextInt();
-    while(n<=n_vezes||n>=fim_da_linha){
 
-      
-      dobro = n * 2;
-      soma_antecessor = n - 1;
-      
-      System.out.printf("Dobro: %d\n", dobro);
-      System.out.printf("Soma antecessor: %d\n", soma_antecessor);
-     
+    while(num<=n_vezes&&num>fim_da_linha){
+
+      System.out.println("passou aqui");
     }
+    System.out.printf("Dobro: %d\n", dobro);
+    System.out.printf("Soma antecessor: %d\n", soma_antecessor);
 
     reader.close();
   }
