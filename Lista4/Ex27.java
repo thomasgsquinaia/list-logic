@@ -26,22 +26,25 @@ public class Ex27 {
     int i = 0;
     int n_vezes = 0;
     int dobro = 0;
-    int soma_antecessor = 0;
+    int soma = 0;
+    int antecessor = 0;
     int fim_da_linha = 100000;
 
-    System.out.println("Digite um número: ");
+    System.out.print("Digite um número: ");
     num=reader.nextInt();
     
-    System.out.println("Digite o numero de vezes: ");
+    System.out.print("Digite o numero de vezes: ");
     n_vezes=reader.nextInt();
-
+    System.out.println("\n");
     while(i<=n_vezes){
-
-      System.out.println("passou aqui");
-      i++;
+        dobro=num*2;
+        num=dobro;//analisar!!!
+        soma = antecessor+dobro;
+        antecessor=dobro;
+        System.out.printf("Dobro: %d ", dobro);
+        System.out.printf("Soma antecessor: %d\n", soma);
+        i++; 
     }
-    System.out.printf("Dobro: %d\n", dobro);
-    System.out.printf("Soma antecessor: %d\n", soma_antecessor);
 
     reader.close();
   }
