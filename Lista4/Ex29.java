@@ -22,8 +22,11 @@ import java.util.Scanner;
 public class Ex29 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
-    System.out.println(" conta de 100 a");
-    
+
+    for(i = 100; i <= 999; i++) {
+
+    }
+
     reader.close();
   }
 }
