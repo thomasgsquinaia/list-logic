@@ -44,7 +44,7 @@ public class Ex29 {
       digito3 = resto3/1;
 
       // System.out.printf("%d - %d * %d * %d\n", i, resto1, resto2, resto3);
-      System.out.printf("%d - %d * %d * %d\n", digito1, digito2, digito3 );
+      System.out.printf("%d - %d * %d * %d\n", digito1, digito2, digito3);
     }
     
     reader.close();
