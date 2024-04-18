@@ -24,7 +24,6 @@ public class Ex29 {
     Scanner reader = new Scanner(System.in);
 
     float mult = 0f;
-    int i = 0;
     int resto1 = 0;
     int resto2 = 0;
     int resto3 = 0;
@@ -34,7 +33,7 @@ public class Ex29 {
     int digito3 = 0;
     
 
-    for(i = 100; i <= 999; i++) {
+    for(int i = 100; i <= 999; i++) {
       
       resto1 = i%100;
       resto2 = i%10;
@@ -44,7 +43,8 @@ public class Ex29 {
       digito2 = resto2/10;
       digito3 = resto3/1;
 
-      System.out.printf("%d * %d * %d", digito1, digito2, digito3);
+      // System.out.printf("%d - %d * %d * %d\n", i, resto1, resto2, resto3);
+      System.out.printf("%d - %d * %d * %d\n", digito1, digito2, digito3);
     }
     
     reader.close();
