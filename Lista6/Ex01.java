@@ -20,18 +20,42 @@ public class Ex01 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
-        System.out.println("Digite o número da matrícula para cadastrar: ");
-        int n_matricula = reader.nextInt();
+        System.out.println("Digite o número da matrícula para iniciar o cadastro: ");
+        int n_matricula = 1;
+        String concursado = "";
+        int idade = 0;
+        int sexo = 0;
+        float altura = 0f;
 
         while(n_matricula != 0) {
+            System.out.println("N matricula: ");
+            n_matricula = reader.nextInt(); 
             if(n_matricula == 0) {
                 break;
             } 
 
+            System.out.println("idade: ");
+            idade = reader.nextInt(); 
+            
+            System.out.print("Digite o sexo => 1: feminino | 2: masculino: ");
+            sexo = reader.nextInt();
+            if(sexo == 1) {
+                sexo = 1;
+            } 
+            if(sexo == 2) {
+                sexo = 2;
+            }
 
+            System.out.print("Digite a altura: ");
+            altura = reader.nextFloat();
+
+            System.out.println("Digite se é concursado: [S/N]");
+            concursado = reader.next();
+            
+            
         }
-        System.out.println("saiu");
-
+        System.out.printf("Número de concursados: %s", concursado);
+        
         reader.close();
     }
 }
