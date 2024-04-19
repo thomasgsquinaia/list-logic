@@ -1,7 +1,6 @@
 package Lista6;
 
 import java.util.Scanner;
-
 /* 
     Fazer um programa para ler os dados 
     (matrícula, idade, sexo, altura e concursado [S/N]) de
@@ -25,9 +24,14 @@ public class Ex01 {
         int n_matricula = reader.nextInt();
 
         while(n_matricula != 0) {
-            System.out.println("ta aqui");
-            n_matricula++;
+            if(n_matricula == 0) {
+                break;
+            } 
+
+
         }
         System.out.println("saiu");
+
+        reader.close();
     }
 }
