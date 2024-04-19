@@ -22,29 +22,23 @@ import java.util.Scanner;
 public class Ex29 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
-
-    float mult = 0f;
-    int resto1 = 0;
-    int resto2 = 0;
-    int resto3 = 0;
-
-    int digito1 = 0;
-    int digito2 = 0;
-    int digito3 = 0;
     
-
     for(int i = 100; i <= 999; i++) {
-      
-      resto1 = i%100;
-      resto2 = i%10;
-      resto3 = i%1;
+      int num = i;
+      int mult = 1;
+      int x;
+      while (num != 0) {
+        int digit = num % 10;
+        mult *= digit;
+        num /=10;
+      }
 
-      digito1 = resto1/100;
-      digito2 = resto2/10;
-      digito3 = resto3/1;
+      System.out.printf("Produto: %d\n", mult);
 
-      // System.out.printf("%d - %d * %d * %d\n", i, resto1, resto2, resto3);
-      System.out.printf("%d - %d * %d * %d\n", digito1, digito2, digito3);
+      if(i % 20 == 0) { 
+        System.out.println("Digite alguma tecla para continuar a sequencia: ");
+        reader.nextLine();
+      }
     }
     
     reader.close();
