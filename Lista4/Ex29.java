@@ -3,7 +3,7 @@ package Lista4;
 import java.util.Scanner;
 
 /*
-  HARD - Escreva um programa que conte de 100 a 999 (inclusive) e exiba, um por
+  Escreva um programa que conte de 100 a 999 (inclusive) e exiba, um por
   linha, o produto dos três dıgitos dos números.
   a. Desafio 1 - Faça seu programa dar uma pausa a cada 20 linhas para que
   seja possível ver todos os números pouco a pouco. Solicite que seja

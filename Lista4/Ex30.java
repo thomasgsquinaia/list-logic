@@ -14,6 +14,12 @@ public class Ex30 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
 
+    System.out.println("Digite um número: ");
+    int n = reader.nextInt();
+
+    for(int i = 1; i <= n; i++) {
+      
+    }
     
     reader.close();
   }
