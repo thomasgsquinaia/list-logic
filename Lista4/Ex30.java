@@ -14,13 +14,29 @@ public class Ex30 {
   public static void main(String[] args) {
     Scanner reader = new Scanner(System.in);
 
+    int denominador = 1;
+    int numerador = 1;
+    float soma = 0;
+
     System.out.println("Digite um número: ");
     int n = reader.nextInt();
 
     for(int i = 1; i <= n; i++) {
-      
+      int d = denominador;
+      int fat = 1;
+
+      for(int e = 1; e <= d; e++) {
+        fat*=e;
+      }
+      float res = (float)numerador/(float)fat;
+      soma+=res;
+
+      System.out.printf("%d/%d = %f\n", numerador, fat, res);
+      numerador++;
+      denominador+=2;
     }
-    
+
+    System.out.printf("Soma: %f \n",soma);
     reader.close();
   }
 }
