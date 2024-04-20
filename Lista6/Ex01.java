@@ -63,13 +63,8 @@ public class Ex01 {
         System.out.printf("Número de funcionários concursadas: %d", concursados);
         System.out.printf("a quantidade de mulheres com mais de 30 anos sem concurso: %d", concursado);
         System.out.printf("a quantidade de concursados(as): %d", concursado);
-        System.out.printf("Número de concursados: %d", concursado);
-        a) o número de funcionárias concursadas;
-    b) o número de funcionários (somente homens);
-    c) a maior idade dos homens concursados;
-    d) a quantidade de mulheres com mais de 30 anos sem concurso;
-    e) a quantidade de concursados(as);
-    f) a média das alturas dos homens com menos de 40 anos
+        System.out.printf("a média das alturas dos homens com menos de 40 anos: %d", concursado);
+ 
         reader.close();
     }
 }
