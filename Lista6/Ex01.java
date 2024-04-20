@@ -31,8 +31,9 @@ public class Ex01 {
         int idade = 0;
 
         while(n_matricula != 0) {
-            System.out.println("Número da matrícula: ");
+            System.out.println("Número da matrícula [caso queira encerrar o programa digite 0]: ");
             n_matricula = reader.nextInt(); 
+            System.out.println("===================================================================");
 
             if(n_matricula == 0) {
                 break;
@@ -43,19 +44,26 @@ public class Ex01 {
             
             System.out.print("Digite o sexo => 1: masculino | 2: feminino: ");
             sexo = reader.nextInt();
+
             if(sexo == 1) {
                 sexo = 1;
                 System.out.println("Digite se é concursado: [S = 1/N = 0]");
                 NumConcursados = reader.nextInt();
                 NumConcursados++;
+                qtdConcursados++;
             } 
 
             if(sexo == 2) {
                 sexo = 2;
                 System.out.println("Digite se é concursado: [S = 1/N = 0]");
                 NumConcursadas = reader.nextInt();
+                if(NumConcursadas == 0 && idade > 30) {
+                    qtdMulherSemConcurso++;
+                }
                 NumConcursadas++;
+                qtdConcursados++;
             }
+
 
             System.out.print("Digite a altura: ");
             altura = reader.nextFloat();
@@ -67,7 +75,7 @@ public class Ex01 {
         System.out.printf("Número de funcionários concursados: %d\n", NumConcursados);
         System.out.printf("a quantidade de concursados(as): %d\n", qtdConcursados);
         System.out.printf("a quantidade de mulheres com mais de 30 anos sem concurso: %d\n", qtdMulherSemConcurso);
-        System.out.printf("a média das alturas dos homens com menos de 40 anos: %d\n", mediaAlturasHomens);
+        System.out.printf("a média das alturas dos homens com menos de 40 anos: %.2f\n", mediaAlturasHomens);
  
         reader.close();
     }
