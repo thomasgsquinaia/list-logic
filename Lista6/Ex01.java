@@ -52,10 +52,10 @@ public class Ex01 {
                 NumConcursados = reader.nextInt();
                 if(altura < 40) {
                     somaAltura+=altura; 
-                    mediaAlturasHomens = somaAltura/NumConcursados;
+                    mediaAlturasHomens = somaAltura/qtdConcursados;
                 }
-                NumConcursados++;
                 qtdConcursados++;
+                NumConcursados++;
             } 
 
             if(sexo == 2) {
