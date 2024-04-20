@@ -26,6 +26,7 @@ public class Ex01 {
         int NumConcursados = 0;
         int qtdConcursados = 0;
         float mediaAlturasHomens = 0;
+        float somaAltura = 0;
         int sexo = 0;
         float altura = 0f;
         int idade = 0;
@@ -49,6 +50,10 @@ public class Ex01 {
                 sexo = 1;
                 System.out.println("Digite se é concursado: [S = 1/N = 0]");
                 NumConcursados = reader.nextInt();
+                if(altura < 40) {
+                    somaAltura+=altura; 
+                    mediaAlturasHomens = somaAltura/NumConcursados;
+                }
                 NumConcursados++;
                 qtdConcursados++;
             } 
