@@ -20,16 +20,20 @@ public class Ex01 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
-        System.out.println("Digite o número da matrícula para iniciar o cadastro: ");
-        int n_matricula = reader.nextInt();
-        int idade = 0;
+        int n_matricula = 1;
+        int qtdMulherSemConcurso = 0;
+        int NumConcursadas = 0;
+        int NumConcursados = 0;
+        int qtdConcursados = 0;
+        float mediaAlturasHomens = 0;
         int sexo = 0;
         float altura = 0f;
-        int concursado = 0;
-    
+        int idade = 0;
+
         while(n_matricula != 0) {
-            System.out.println("N matricula: ");
+            System.out.println("Número da matrícula: ");
             n_matricula = reader.nextInt(); 
+
             if(n_matricula == 0) {
                 break;
             } 
@@ -37,33 +41,33 @@ public class Ex01 {
             System.out.println("idade: ");
             idade = reader.nextInt(); 
             
-            System.out.print("Digite o sexo => 1: feminino | 2: masculino: ");
+            System.out.print("Digite o sexo => 1: masculino | 2: feminino: ");
             sexo = reader.nextInt();
             if(sexo == 1) {
                 sexo = 1;
+                System.out.println("Digite se é concursado: [S = 1/N = 0]");
+                NumConcursados = reader.nextInt();
+                NumConcursados++;
             } 
+
             if(sexo == 2) {
                 sexo = 2;
+                System.out.println("Digite se é concursado: [S = 1/N = 0]");
+                NumConcursadas = reader.nextInt();
+                NumConcursadas++;
             }
 
             System.out.print("Digite a altura: ");
             altura = reader.nextFloat();
 
-            System.out.println("Digite se é concursado: [S = 1/N = 0]");
-            concursado = reader.nextInt();
-
-            if(concursado == 0) {
-                concursado--;
-            }
-            concursado++;
-
             
         }
-        System.out.printf("Número de funcionárias concursadas: %d", concursadas);
-        System.out.printf("Número de funcionários concursadas: %d", concursados);
-        System.out.printf("a quantidade de mulheres com mais de 30 anos sem concurso: %d", concursado);
-        System.out.printf("a quantidade de concursados(as): %d", concursado);
-        System.out.printf("a média das alturas dos homens com menos de 40 anos: %d", concursado);
+
+        System.out.printf("Número de funcionárias concursadas: %d\n", NumConcursadas);
+        System.out.printf("Número de funcionários concursados: %d\n", NumConcursados);
+        System.out.printf("a quantidade de concursados(as): %d\n", qtdConcursados);
+        System.out.printf("a quantidade de mulheres com mais de 30 anos sem concurso: %d\n", qtdMulherSemConcurso);
+        System.out.printf("a média das alturas dos homens com menos de 40 anos: %d\n", mediaAlturasHomens);
  
         reader.close();
     }
