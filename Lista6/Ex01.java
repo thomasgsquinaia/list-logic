@@ -21,12 +21,12 @@ public class Ex01 {
         Scanner reader = new Scanner(System.in);
 
         System.out.println("Digite o número da matrícula para iniciar o cadastro: ");
-        int n_matricula = 1;
-        String concursado = "";
+        int n_matricula = reader.nextInt();
         int idade = 0;
         int sexo = 0;
         float altura = 0f;
-
+        int concursado = 0;
+    
         while(n_matricula != 0) {
             System.out.println("N matricula: ");
             n_matricula = reader.nextInt(); 
@@ -49,13 +49,27 @@ public class Ex01 {
             System.out.print("Digite a altura: ");
             altura = reader.nextFloat();
 
-            System.out.println("Digite se é concursado: [S/N]");
-            concursado = reader.next();
-            
+            System.out.println("Digite se é concursado: [S = 1/N = 0]");
+            concursado = reader.nextInt();
+
+            if(concursado == 0) {
+                concursado--;
+            }
+            concursado++;
+
             
         }
-        System.out.printf("Número de concursados: %s", concursado);
-        
+        System.out.printf("Número de funcionárias concursadas: %d", concursadas);
+        System.out.printf("Número de funcionários concursadas: %d", concursados);
+        System.out.printf("a quantidade de mulheres com mais de 30 anos sem concurso: %d", concursado);
+        System.out.printf("a quantidade de concursados(as): %d", concursado);
+        System.out.printf("Número de concursados: %d", concursado);
+        a) o número de funcionárias concursadas;
+    b) o número de funcionários (somente homens);
+    c) a maior idade dos homens concursados;
+    d) a quantidade de mulheres com mais de 30 anos sem concurso;
+    e) a quantidade de concursados(as);
+    f) a média das alturas dos homens com menos de 40 anos
         reader.close();
     }
 }
