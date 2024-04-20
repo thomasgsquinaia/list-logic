@@ -23,13 +23,15 @@ public class Ex01 {
         int n_matricula = 1;
         int qtdMulherSemConcurso = 0;
         int NumConcursadas = 0;
-        int NumConcursados = 0;
         int qtdConcursados = 0;
+        int NumHomens = 0;
+        int sexo = 0;
+        int idade = 0;
+        int maiorIdadeHomemConcursado = 0;
+
         float mediaAlturasHomens = 0;
         float somaAltura = 0;
-        int sexo = 0;
         float altura = 0f;
-        int idade = 0;
 
         while(n_matricula != 0) {
             System.out.println("Número da matrícula [caso queira encerrar o programa digite 0]: ");
@@ -49,13 +51,16 @@ public class Ex01 {
             if(sexo == 1) {
                 sexo = 1;
                 System.out.println("Digite se é concursado: [S = 1/N = 0]");
-                NumConcursados = reader.nextInt();
-                if(altura < 40) {
+                NumHomens = reader.nextInt();
+                if(idade < 40) {
                     somaAltura+=altura; 
                     mediaAlturasHomens = somaAltura/qtdConcursados;
                 }
+                if(maiorIdadeHomemConcursado < idade) {
+                    maiorIdadeHomemConcursado = idade;
+                }
                 qtdConcursados++;
-                NumConcursados++;
+                NumHomens++;
             } 
 
             if(sexo == 2) {
@@ -77,7 +82,8 @@ public class Ex01 {
         }
 
         System.out.printf("Número de funcionárias concursadas: %d\n", NumConcursadas);
-        System.out.printf("Número de funcionários concursados: %d\n", NumConcursados);
+        System.out.printf("o número de funcionários (somente homens): %d\n", NumHomens);
+        System.out.printf("a maior idade dos homens concursados: %d\n", maiorIdadeHomemConcursado);
         System.out.printf("a quantidade de concursados(as): %d\n", qtdConcursados);
         System.out.printf("a quantidade de mulheres com mais de 30 anos sem concurso: %d\n", qtdMulherSemConcurso);
         System.out.printf("a média das alturas dos homens com menos de 40 anos: %.2f\n", mediaAlturasHomens);
