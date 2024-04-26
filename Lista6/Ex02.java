@@ -35,9 +35,7 @@ public class Ex02 {
                     pares = n_positivo;
                 }
             }
-
             System.out.printf("Numeros pares entre 1 e %d: %d\n", n_positivo,pares);
-
 
             if(n_positivo > 0) {
                 System.out.println("Voce deseja prosseguir?");
