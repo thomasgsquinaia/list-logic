@@ -1,5 +1,7 @@
 package Lista6;
 
+import java.util.Scanner;
+
 /*
     Solicitar um número inteiro positivo ao usuário, validando a entrada de dados
     (informando se ele estiver errado e repetindo a solicitação até que esteja correto).
@@ -14,5 +16,20 @@ package Lista6;
  */
 
 public class Ex02 {
-    
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+
+        int n_positivo = 1;
+       
+        while (n_positivo != 0) {
+            System.out.print("Digite um número positivo: ");
+            n_positivo = reader.nextInt();
+            if(n_positivo < 0) {
+                System.out.println("Digite um número positivo");
+                return;
+            }
+        }
+
+        reader.close();
+    }
 }
