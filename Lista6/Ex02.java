@@ -26,21 +26,34 @@ public class Ex02 {
         while (n_positivo > 0) {
             System.out.print("Digite um número positivo: ");
             n_positivo = reader.nextInt();
-            if(n_positivo < 0) {
-                break;
-            }
 
-            for(int i = 1; i <= n_positivo; i++){ 
-                if(n_positivo % 2 == 0) {
-                    pares = n_positivo;
+            if(n_positivo <= 0) {
+                System.out.println(" Entrou aqui 1 ");
+                while(n_positivo <= 0) {
+                    System.out.print("Digite um número positivo: ");
+                    n_positivo = reader.nextInt();
                 }
-            }
-            System.out.printf("Numeros pares entre 1 e %d: %d\n", n_positivo,pares);
+            } 
+            else { 
+                System.out.println(" Entrou aqui 2 ");
+                for(int i = 1; i <= n_positivo; i++){ 
+                    if(i % 2 == 0) {
+                        // System.out.printf("é par: %d\n", i);
+                        pares = i;
+                    }
+                    System.out.printf("Números inteiros pares entre 1 e %d: %d\n", n_positivo,pares);
+                    // System.out.printf("i: %d\n", i);
+                    // System.out.printf("pares: %d\n", pares);
+                }
 
-            if(n_positivo > 0) {
-                System.out.println("Voce deseja prosseguir?");
-                resposta = reader.next();
+                // if(n_positivo > 0) {
+                //     System.out.println("Voce deseja prosseguir?");
+                //     resposta = reader.next();
+                // }
             }
+          
+
+           
         }
 
         reader.close();
