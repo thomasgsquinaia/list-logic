@@ -40,8 +40,8 @@ public class Ex02 {
                     if(i % 2 == 0) {
                         // System.out.printf("é par: %d\n", i);
                         pares = i;
+                        System.out.printf("Números inteiros pares entre 1 e %d: %d\n", n_positivo,pares);
                     }
-                    System.out.printf("Números inteiros pares entre 1 e %d: %d\n", n_positivo,pares);
                     // System.out.printf("i: %d\n", i);
                     // System.out.printf("pares: %d\n", pares);
                 }
