@@ -29,13 +29,13 @@ public class Ex02 {
             n_positivo = reader.nextInt();
 
             if (n_positivo <= 0) {
-                System.out.println(" Entrou aqui 1 ");
+                System.out.printf("%d Valor incorreto!\n", n_positivo);
+
                 while (n_positivo <= 0) {
                     System.out.print("Digite um número positivo: ");
                     n_positivo = reader.nextInt();
                 }
             } else {
-                System.out.println(" Entrou aqui 2 ");
                 for (int i = 1; i <= n_positivo; i++) {
                     if (i % 2 == 0) {
                         pares = i;
