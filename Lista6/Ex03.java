@@ -20,26 +20,26 @@ public class Ex03 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
-        float peso = 0;
-        float altura = 0;
-        float imc = 0;
+        float peso = 0f;
+        float altura = 1;
+        float imc = 0f;
         
-
         while(altura != 0) {
+            System.out.println("Para parar o sistema digite uma altura igual a 0");
             System.out.println("Digite o peso: ");
             peso = reader.nextFloat();
 
             System.out.println("Digite a altura: ");
             altura = reader.nextFloat();
 
-            imc = peso / (altura * altura);
+            imc = (peso / (altura * altura));
 
             if(imc < 18.5) {
-                System.out.printf("Seu imc é igual a: %f", imc);
+                System.out.printf("Seu imc é igual a: %.2f\n", imc);
                 System.out.println("Abaixo do peso!");
             }
             if(imc >= 18.5 && imc <= 24.9) {
-                System.out.printf("Seu imc é igual a: %f", imc);
+                System.out.printf("Seu imc é igual a: %.2f\n", imc);
                 System.out.println("Peso normal!");
             }
 
