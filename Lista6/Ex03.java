@@ -22,6 +22,7 @@ public class Ex03 {
 
         float peso = 0;
         float altura = 0;
+        float imc = 0;
         
 
         while(altura != 0) {
@@ -30,6 +31,18 @@ public class Ex03 {
 
             System.out.println("Digite a altura: ");
             altura = reader.nextFloat();
+
+            imc = peso / (altura * altura);
+
+            if(imc < 18.5) {
+                System.out.printf("Seu imc é igual a: %f", imc);
+                System.out.println("Abaixo do peso!");
+            }
+            if(imc >= 18.5 && imc <= 24.9) {
+                System.out.printf("Seu imc é igual a: %f", imc);
+                System.out.println("Peso normal!");
+            }
+
         }
 
 
