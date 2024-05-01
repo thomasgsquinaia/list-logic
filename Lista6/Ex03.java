@@ -37,9 +37,12 @@ public class Ex03 {
 
             System.out.println("Digite a altura: ");
             altura = reader.nextFloat();
+            
+            if(altura == 0) {
+                break;
+            }
 
             imc = (peso / (altura * altura));
-
             if(imc < 18.5) {
                 System.out.printf("Seu imc é igual a: %.2f\n", imc);
                 System.out.println("Abaixo do peso!");
