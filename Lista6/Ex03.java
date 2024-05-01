@@ -37,12 +37,13 @@ public class Ex03 {
 
             System.out.println("Digite a altura: ");
             altura = reader.nextFloat();
-            
+
             if(altura == 0) {
                 break;
             }
 
             imc = (peso / (altura * altura));
+
             if(imc < 18.5) {
                 System.out.printf("Seu imc é igual a: %.2f\n", imc);
                 System.out.println("Abaixo do peso!");
@@ -76,7 +77,7 @@ public class Ex03 {
 
         }
         
-        System.out.printf("Quantidade de pessoas ABAIXO DO PESO: %d\n", qtdAbaixoPeso);
+        System.out.printf("\nQuantidade de pessoas ABAIXO DO PESO: %d\n", qtdAbaixoPeso);
         System.out.printf("Quantidade de pessoas PESO NORMAL: %d\n", qtdPesoNormal);
         System.out.printf("Quantidade de pessoas SOBREPESO: %d\n", qtdSobrepeso);
         System.out.printf("Quantidade de pessoas OBSEIDADE GRAU I: %d\n", qtdObesidadeGrauI);
