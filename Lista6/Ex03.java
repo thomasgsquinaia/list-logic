@@ -31,7 +31,7 @@ public class Ex03 {
         int qtdObesidadeGrauIII = 0;
         
         while(altura != 0) {
-            System.out.println("Para parar o sistema digite uma altura igual a 0");
+            System.out.println("\nPara parar o sistema digite uma altura igual a 0");
             System.out.println("Digite o peso: ");
             peso = reader.nextFloat();
 
@@ -71,13 +71,14 @@ public class Ex03 {
                 qtdObesidadeGrauIII++;
             }
 
-            System.out.printf("Quantidade de pessoas ABAIXO DO PESO: %d", qtdAbaixoPeso);
-            System.out.printf("Quantidade de pessoas PESO NORMAL: %d", qtdPesoNormal);
-            System.out.printf("Quantidade de pessoas SOBREPESO: %d", qtdSobrepeso);
-            System.out.printf("Quantidade de pessoas OBSEIDADE GRAU I: %d", qtdObesidadeGrauI);
-            System.out.printf("Quantidade de pessoas OBESIDADE GRAU II DO PESO: %d", qtdObesidadeGrauII);
-            System.out.printf("Quantidade de pessoas OBESIDADE GRAU III: %d", qtdObesidadeGrauIII);
         }
+        
+        System.out.printf("Quantidade de pessoas ABAIXO DO PESO: %d\n", qtdAbaixoPeso);
+        System.out.printf("Quantidade de pessoas PESO NORMAL: %d\n", qtdPesoNormal);
+        System.out.printf("Quantidade de pessoas SOBREPESO: %d\n", qtdSobrepeso);
+        System.out.printf("Quantidade de pessoas OBSEIDADE GRAU I: %d\n", qtdObesidadeGrauI);
+        System.out.printf("Quantidade de pessoas OBESIDADE GRAU II DO PESO: %d\n", qtdObesidadeGrauII);
+        System.out.printf("Quantidade de pessoas OBESIDADE GRAU III: %d\n", qtdObesidadeGrauIII);
 
 
         reader.close();
