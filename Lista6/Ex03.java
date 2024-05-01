@@ -23,7 +23,12 @@ public class Ex03 {
         float peso = 0f;
         float altura = 1;
         float imc = 0f;
-        int qtdNivel1 = 0;
+        int qtdAbaixoPeso = 0;
+        int qtdPesoNormal = 0;
+        int qtdSobrepeso = 0;
+        int qtdObesidadeGrauI = 0;
+        int qtdObesidadeGrauII = 0;
+        int qtdObesidadeGrauIII = 0;
         
         while(altura != 0) {
             System.out.println("Para parar o sistema digite uma altura igual a 0");
@@ -38,11 +43,17 @@ public class Ex03 {
             if(imc < 18.5) {
                 System.out.printf("Seu imc é igual a: %.2f\n", imc);
                 System.out.println("Abaixo do peso!");
-                qtdNivel1++;
+                qtdAbaixoPeso++;
             }
             if(imc >= 18.5 && imc <= 24.9) {
                 System.out.printf("Seu imc é igual a: %.2f\n", imc);
                 System.out.println("Peso normal!");
+                qtdPesoNormal++;
+            }
+            if(imc >= 25.0 && imc <= 29.9) {
+                System.out.printf("Seu imc é igual a: %.2f\n", imc);
+                System.out.println("SObrepeso!");
+                qtdSobrepeso++;
             }
 
         }
