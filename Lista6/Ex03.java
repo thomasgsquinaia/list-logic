@@ -72,9 +72,9 @@ public class Ex03 {
             }
 
             System.out.printf("Quantidade de pessoas ABAIXO DO PESO: %d", qtdAbaixoPeso);
-            System.out.printf("Quantidade de pessoas ABAIXO DO PESO: %d", qtdPesoNormal);
-            System.out.printf("Quantidade de pessoas ABAIXO DO PESO: %d", qtdSobrepeso);
-            System.out.printf("Quantidade de pessoas ABAIXO DO PESO: %d", qtdObesidadeGrauI);
+            System.out.printf("Quantidade de pessoas PESO NORMAL: %d", qtdPesoNormal);
+            System.out.printf("Quantidade de pessoas SOBREPESO: %d", qtdSobrepeso);
+            System.out.printf("Quantidade de pessoas OBSEIDADE GRAU I: %d", qtdObesidadeGrauI);
             System.out.printf("Quantidade de pessoas OBESIDADE GRAU II DO PESO: %d", qtdObesidadeGrauII);
             System.out.printf("Quantidade de pessoas OBESIDADE GRAU III: %d", qtdObesidadeGrauIII);
         }
