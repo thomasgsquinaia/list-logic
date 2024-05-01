@@ -52,7 +52,12 @@ public class Ex03 {
             }
             if(imc >= 25.0 && imc <= 29.9) {
                 System.out.printf("Seu imc é igual a: %.2f\n", imc);
-                System.out.println("SObrepeso!");
+                System.out.println("Sobrepeso!");
+                qtdSobrepeso++;
+            }
+            if(imc >= 30.0 && imc <= 34.9) {
+                System.out.printf("Seu imc é igual a: %.2f\n", imc);
+                System.out.println("Obseidade Grau I!");
                 qtdSobrepeso++;
             }
 
