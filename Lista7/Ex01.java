@@ -31,8 +31,31 @@ public class Ex01 {
                 System.out.println("Domingo");
             }
 
-            System.out.printf("Dia do mês: %s\n", dSemana);
+            if(dSemana == 2) {
+                System.out.println("Segunda-feira");
+            }
 
+            if(dSemana == 3) {
+                System.out.println("Terça-feira");
+            }
+
+            if(dSemana == 4) {
+                System.out.println("Quarta-feira");
+            }
+
+            if(dSemana == 5) {
+                System.out.println("Quinta-feira");
+            }
+
+            if(dSemana == 6) {
+                System.out.println("Sexta-Feira");
+            }
+
+            if(dSemana == 7) {
+                System.out.println("Sábado");
+            }
+
+            
 
 
         }
