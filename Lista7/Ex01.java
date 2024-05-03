@@ -1,6 +1,8 @@
 package Lista7;
 
 import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Scanner;
 
 /*
@@ -11,16 +13,26 @@ import java.util.Scanner;
 public class Ex01 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        Calendar calendar = Calendar.getInstance();
+        Calendar calendar = new GregorianCalendar();
+        // Date date = new Date();
 
         int diaSemana = 1;        
+        int dSemana = calendar.get(Calendar.DAY_OF_WEEK);
 
         while (diaSemana != 0) {
             System.out.println("Digite um número para descobrir o dia da semana: ");
             diaSemana = reader.nextInt();
 
+            if(diaSemana == 0) { 
+                System.out.println("Saindo do sitema...");
+                break;
+            }
 
-            
+            System.out.printf("Dia do mês: %s\n", calendar.getTime());
+            System.out.printf("Dia do mês: %s\n", dSemana);
+
+
+
         }
 
 
