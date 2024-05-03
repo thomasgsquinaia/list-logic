@@ -13,10 +13,16 @@ public class Ex01 {
         Scanner reader = new Scanner(System.in);
         Calendar calendar = Calendar.getInstance();
 
-        System.out.println("Digite um número para descobrir o dia da semana: ");
-        int diaSemana = reader.nextInt();
+        int diaSemana = 1;        
 
-        
+        while (diaSemana != 0) {
+            System.out.println("Digite um número para descobrir o dia da semana: ");
+            diaSemana = reader.nextInt();
+
+
+            
+        }
+
 
 
         reader.close();
