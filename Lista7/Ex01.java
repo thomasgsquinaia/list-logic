@@ -31,7 +31,6 @@ public class Ex01 {
                 System.out.println("Domingo");
             }
 
-            System.out.printf("Dia do mês: %s\n", calendar.getTime());
             System.out.printf("Dia do mês: %s\n", dSemana);
 
 
