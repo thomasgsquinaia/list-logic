@@ -14,18 +14,21 @@ public class Ex01 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         Calendar calendar = new GregorianCalendar();
-        // Date date = new Date();
 
         int diaSemana = 1;        
         int dSemana = calendar.get(Calendar.DAY_OF_WEEK);
 
         while (diaSemana != 0) {
             System.out.println("Digite um número para descobrir o dia da semana: ");
-            diaSemana = reader.nextInt();
+            dSemana = reader.nextInt();
 
-            if(diaSemana == 0) { 
+            if(dSemana == 0) { 
                 System.out.println("Saindo do sitema...");
                 break;
+            }
+
+            if(dSemana == 1) {
+                System.out.println("Domingo");
             }
 
             System.out.printf("Dia do mês: %s\n", calendar.getTime());
