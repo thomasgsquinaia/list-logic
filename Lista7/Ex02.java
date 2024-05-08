@@ -9,6 +9,9 @@ package Lista7;
 
 public class Ex02 {
     public static void main(String[] args) {
-        
+        int descontoDez = 0;
+        int descontoCinco = 0;
+
+
     }
 }
