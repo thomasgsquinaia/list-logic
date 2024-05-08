@@ -13,7 +13,17 @@ public class Ex02 {
         int descontoCinco = 0;
         float total = 0f;
         float valorProduto = 0f;
+        int tipoCliete = 0;
 
+        System.out.println();
+        switch (tipoCliete) {
+            case 1:
+                
+                break;
+        
+            default:
+                break;
+        }
 
     }
 }
