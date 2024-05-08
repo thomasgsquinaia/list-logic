@@ -19,7 +19,7 @@ public class Ex02 {
         int descontoDez = 0;
         int descontoCinco = 0;
         float total = 0f;
-        float valorProduto = 0f;
+        float valorProduto = 1f;
         int tipoCliete;
 
         System.out.println("Digite o tipo de cliente: ");
@@ -27,6 +27,10 @@ public class Ex02 {
 
         switch (tipoCliete) {
             case 1://cliente comum
+                while (valorProduto != 0) {
+                    System.out.println("digite o valor do produto");
+                }
+                System.out.printf("Total: %f", total);
                 break;
             case 2: //funcionario
                 break;  
