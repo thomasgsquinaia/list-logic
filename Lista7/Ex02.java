@@ -20,17 +20,24 @@ public class Ex02 {
         int descontoCinco = 0;
         float total = 0f;
         float valorProduto = 1f;
+        float valorAntigo = 0f;
         int tipoCliete;
 
-        System.out.println("Digite o tipo de cliente: ");
+        System.out.println("Digite o tipo de cliente: \n[1] - cliente comum \n[2] - funcionario \n[3] - vip");
         tipoCliete = reader.nextInt();
 
         switch (tipoCliete) {
             case 1://cliente comum
                 while (valorProduto != 0) {
+                    if(valorProduto == 0) {
+                        break;
+                    }
                     System.out.println("digite o valor do produto");
+                    valorProduto = reader.nextFloat();
+
+                    total+=valorProduto;
                 }
-                System.out.printf("Total: %f", total);
+                System.out.printf("Total: %.2f", total);
                 break;
             case 2: //funcionario
                 break;  
