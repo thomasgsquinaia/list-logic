@@ -40,6 +40,11 @@ public class Ex02 {
                 System.out.printf("Cliente: %d - Cliente Comum\nTotal: %.2f", tipoCliente,total);
                 break;
             case 2: //funcionario
+                while (valorProduto != 0) {
+                    if(valorProduto == 0) {
+                        break;
+                    }
+                }
                 break;  
             case 3: //vip
 
