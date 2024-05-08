@@ -31,23 +31,25 @@ public class Ex02 {
                     if(valorProduto == 0) {
                         break;
                     }
-                    System.out.println("digite o valor do produto");
+                    System.out.println("digite o valor do produto: ");
                     valorProduto = reader.nextFloat();
 
                     total+=valorProduto;
                 }
                 System.out.printf("Cliente: %d - Cliente Comum\nTotal: %.2f", tipoCliente,total);
                 break;
-            case 2: //funcionario
+            case 2: //funcionario 10%
                 while (valorProduto != 0) {
                     if(valorProduto == 0) {
                         break;
                     }
+                    System.out.println("Digite o valor do produto: ");
+                    
 
                     System.out.printf("Cliente: %d - Fúncionario\nTotal: %.2f", tipoCliente,total);
                 }
                 break;  
-            case 3: //vip
+            case 3: //vip 5%
 
                 break;            
             default:
