@@ -16,12 +16,11 @@ public class Ex02 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
+        int tipoCliente;
         int descontoDez = 0;
         int descontoCinco = 0;
         float total = 0f;
         float valorProduto = 1f;
-        float valorAntigo = 0f;
-        int tipoCliente;
 
         System.out.println("Digite o tipo de cliente: \n[1] - cliente comum \n[2] - funcionario \n[3] - vip");
         tipoCliente = reader.nextInt();
@@ -44,6 +43,8 @@ public class Ex02 {
                     if(valorProduto == 0) {
                         break;
                     }
+
+                    System.out.printf("Cliente: %d - Fúncionario\nTotal: %.2f", tipoCliente,total);
                 }
                 break;  
             case 3: //vip
