@@ -53,7 +53,10 @@ public class Ex02 {
                 break;  
             case 3: //vip 5%
                 while(valorProduto != 0) {
-
+                    if (valorProduto == 0) {
+                        break;
+                    }
+                    System.out.println("Digite o valor do produto: ");
                 }
                 descontoCinco = total - (total * 0.05f);
                 System.out.printf("Cliente: %d - Vip\nTotal: %.2f", tipoCliente,descontoCinco);
