@@ -55,8 +55,8 @@ public class Ex02 {
                 while(valorProduto != 0) {
 
                 }
-                System.out.printf("Cliente: %d - Vip\nTotal: %.2f", tipoCliente,descontoDez);
-
+                descontoCinco = total - (total * 0.05f);
+                System.out.printf("Cliente: %d - Vip\nTotal: %.2f", tipoCliente,descontoCinco);
                 break;            
             default:
                 break;
