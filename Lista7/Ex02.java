@@ -53,8 +53,10 @@ public class Ex02 {
                 break;  
             case 3: //vip 5%
                 while(valorProduto != 0) {
-                    
+
                 }
+                System.out.printf("Cliente: %d - Vip\nTotal: %.2f", tipoCliente,descontoDez);
+
                 break;            
             default:
                 break;
