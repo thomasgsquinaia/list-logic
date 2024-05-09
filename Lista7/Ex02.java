@@ -52,7 +52,9 @@ public class Ex02 {
                 System.out.printf("Cliente: %d - Fúncionario\nTotal: %.2f", tipoCliente,descontoDez);
                 break;  
             case 3: //vip 5%
-
+                while(valorProduto != 0) {
+                    
+                }
                 break;            
             default:
                 break;
