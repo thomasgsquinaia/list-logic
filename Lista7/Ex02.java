@@ -57,6 +57,9 @@ public class Ex02 {
                         break;
                     }
                     System.out.println("Digite o valor do produto: ");
+                    valorProduto = reader.nextFloat();
+
+                    total+=valorProduto;
                 }
                 descontoCinco = total - (total * 0.05f);
                 System.out.printf("Cliente: %d - Vip\nTotal: %.2f", tipoCliente,descontoCinco);
