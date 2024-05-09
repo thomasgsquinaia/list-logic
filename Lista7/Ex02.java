@@ -17,8 +17,8 @@ public class Ex02 {
         Scanner reader = new Scanner(System.in);
 
         int tipoCliente;
-        int descontoDez = 0;
-        int descontoCinco = 0;
+        float descontoDez = 0f;
+        float descontoCinco = 0f;
         float total = 0f;
         float valorProduto = 1f;
 
@@ -44,10 +44,12 @@ public class Ex02 {
                         break;
                     }
                     System.out.println("Digite o valor do produto: ");
-                    
+                    valorProduto = reader.nextFloat();
 
-                    System.out.printf("Cliente: %d - Fúncionario\nTotal: %.2f", tipoCliente,total);
+                    total+=valorProduto;
                 }
+                descontoDez = total - (total * 0.1f);
+                System.out.printf("Cliente: %d - Fúncionario\nTotal: %.2f", tipoCliente,descontoDez);
                 break;  
             case 3: //vip 5%
 
