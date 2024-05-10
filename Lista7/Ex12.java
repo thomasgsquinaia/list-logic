@@ -12,7 +12,7 @@ import java.util.Scanner;
         vip (3).
  */
 
-public class Ex02 {
+public class Ex12 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
