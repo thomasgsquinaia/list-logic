@@ -26,7 +26,7 @@ public class Ex29 {
     for(int i = 100; i <= 999; i++) {
       int num = i;
       int mult = 1;
-      int x;
+
       while (num != 0) {
         int digit = num % 10;
         mult *= digit;
