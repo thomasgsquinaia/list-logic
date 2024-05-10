@@ -28,7 +28,7 @@ public class Ex27 {
     int dobro = 0;
     int soma = 0;
     int antecessor = 0;
-    int fim_da_linha = 100000;
+    // int fim_da_linha = 100000;
 
     System.out.print("Digite um número: ");
     num=reader.nextInt();
