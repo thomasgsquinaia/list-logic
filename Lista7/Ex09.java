@@ -17,7 +17,7 @@ public class Ex09 {
         System.out.println("Digite o número do mês e saiba se é de baixa ou alta temporada: ");
         mes = reader.nextInt();
 
-        if(mes == 1 || mes == 2 || mes == 12 || mes == 6 || mes == 7){
+        if(mes == 1 || mes == 2 || mes == 12 || mes == 6 || mes == 7) {
             System.out.println("Alta temporada!");
         }
         else {
