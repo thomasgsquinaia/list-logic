@@ -9,12 +9,16 @@ package Lista7;
 public class Ex09 {
     public static void main(String[] args) {
         
-        String altaTemperorada = "";
-        String baixaTemperorada = "";
+        int mes = 0;
 
         System.out.println("Digite o número do mês e saiba se é de baixa ou alta temporada: ");
         mes = 
 
-        if(){}
+        if(mes == 1 || mes == 2 || mes == 12 || mes == 6 || mes == 7){
+            System.out.println("Alta temporada!");
+        }
+        else {
+            System.out.println("Baixa temporada!");
+        }
     }
 }
