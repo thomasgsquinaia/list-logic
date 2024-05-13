@@ -26,8 +26,15 @@ public class Ex11 {
         System.out.println("Digite outro número: ");
         n2 = reader.nextFloat();
 
-        System.out.println("Digite a operação desejada: ");
-        
+        System.out.println("Digite a operação desejada: [+ , - , x, /]");
+
+        resultado = n1 + n2;
+
+        resultado = n1 * n2;
+
+        resultado = n1 / n2;
+
+        resultado = n1 - n2;
         
 
         reader.close();
