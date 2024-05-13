@@ -12,10 +12,7 @@ public class Ex11 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         
-        char soma = '+';
-        char subtracao = '-';
-        char multiplicacao = 'x';
-        char divisao = '/';
+        char operacao;
         float n1 = 0f;
         float n2 = 0f;
         float resultado = 0f;
