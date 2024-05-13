@@ -10,7 +10,7 @@ public class Ex11 {
         char soma = '+';
         char subtracao = '-';
         char multiplicacao = 'x';
-        char subtracao = '/';
+        char divisao = '/';
 
     }
 }
