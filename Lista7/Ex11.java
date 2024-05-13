@@ -20,8 +20,11 @@ public class Ex11 {
         float n2 = 0f;
         float resultado = 0f;
 
-        System.out.println("Digite um número");
+        System.out.println("Digite um número: ");
         n1 = reader.nextFloat();
+
+        System.out.println("Digite outro número: ");
+        n2 = reader.nextFloat();
 
         
 
