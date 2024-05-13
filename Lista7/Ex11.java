@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Ex11 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-
+        
         char soma = '+';
         char subtracao = '-';
         char multiplicacao = 'x';
@@ -26,6 +26,8 @@ public class Ex11 {
         System.out.println("Digite outro número: ");
         n2 = reader.nextFloat();
 
+        System.out.println("Digite a operação desejada: ");
+        
         
 
         reader.close();
