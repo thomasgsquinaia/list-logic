@@ -16,13 +16,12 @@ public class Ex11 {
         char subtracao = '-';
         char multiplicacao = 'x';
         char divisao = '/';
-        float n = 1f;
+        float n1 = 0f;
+        float n2 = 0f;
         float resultado = 0f;
 
-        while(n != 0) {
-
-        }
-
+        System.out.println("Digite um número");
+        n1 = reader.nextFloat();
 
         
 
