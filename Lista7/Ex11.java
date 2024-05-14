@@ -36,8 +36,11 @@ public class Ex11 {
             System.out.println(resultado);
         }
 
-        resultado = n1 / n2;
-
+        if(operacao == 'x'){
+            resultado = n1 / n2;
+            System.out.println(resultado);
+        }
+        
         resultado = n1 - n2;
         
 
