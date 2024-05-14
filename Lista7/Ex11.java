@@ -36,7 +36,6 @@ public class Ex11 {
             System.out.println(resultado);
         }
         
-        
         if(operacao == 'x'){
             resultado = n1 * n2;
             System.out.println(resultado);
@@ -47,7 +46,6 @@ public class Ex11 {
             System.out.println(resultado);
         }
         
-
         reader.close();
     }
 }
