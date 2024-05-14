@@ -32,16 +32,20 @@ public class Ex11 {
         }
 
         if(operacao == '-') {
-            resultado = n1 * n2;
-            System.out.println(resultado);
-        }
-
-        if(operacao == 'x'){
-            resultado = n1 / n2;
+            resultado = n1 - n2;
             System.out.println(resultado);
         }
         
-        resultado = n1 - n2;
+        
+        if(operacao == 'x'){
+            resultado = n1 * n2;
+            System.out.println(resultado);
+        }
+        
+        if(operacao == '/') {
+            resultado = n1 / n2;
+            System.out.println(resultado);
+        }
         
 
         reader.close();
