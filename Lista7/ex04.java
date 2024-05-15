@@ -35,6 +35,12 @@ public class ex04 {
 
         if (idade >= 40 && idade <= 60) {
             adicional = valorConvenio + 95f;
+            System.out.print(adicional);
+        }
+
+        if (idade > 60) {
+            adicional = valorConvenio + 130f;
+            System.out.print(adicional);
         }
 
         reader.close();
