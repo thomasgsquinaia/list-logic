@@ -15,8 +15,15 @@ import java.util.Scanner;
 public class ex04 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
+        
+        int idade = 0;
+        float valorConvenio = 100f;
+        float adicional = 0f;
 
         System.out.println("Digite a idade do conveniado: ");
+        idade = reader.nextInt();
+
+
 
         reader.close();
     }
