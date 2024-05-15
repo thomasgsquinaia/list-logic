@@ -30,7 +30,7 @@ public class ex04 {
 
         if (idade >= 10 && idade <= 30) {
             adicional = valorConvenio + 50f;
-            System.out.println(adicional);
+            System.out.print(adicional);
         }
 
 
