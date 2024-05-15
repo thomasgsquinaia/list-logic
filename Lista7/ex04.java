@@ -34,7 +34,7 @@ public class ex04 {
         }
 
         if (idade >= 40 && idade <= 60) {
-            
+            adicional = valorConvenio + 95f;
         }
 
         reader.close();
