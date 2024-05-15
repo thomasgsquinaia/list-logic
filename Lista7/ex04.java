@@ -1,5 +1,7 @@
 package Lista7;
 
+import java.util.Scanner;
+
 /*
     Criar um programa para identificar o valor a ser pago por um plano de saúde dada a
     idade do conveniado considerando que todos pagam R$ 100 mais um adicional
@@ -12,6 +14,10 @@ package Lista7;
 
 public class ex04 {
     public static void main(String[] args) {
-        
+        Scanner reader = new Scanner(System.in);
+
+        System.out.println("Digite a idade do conveniado: ");
+
+        reader.close();
     }
 }
