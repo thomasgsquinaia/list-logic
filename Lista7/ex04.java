@@ -28,6 +28,10 @@ public class ex04 {
             System.out.println(adicional);
         }
 
+        if (idade >= 10 && idade <= 30) {
+            
+        }
+
 
         reader.close();
     }
