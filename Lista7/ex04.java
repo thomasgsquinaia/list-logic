@@ -25,7 +25,7 @@ public class ex04 {
 
         if(idade < 10) {
             adicional =  valorConvenio + 80f;
-            System.out.println(adicional);
+            System.out.print(adicional);
         }
 
         if (idade >= 10 && idade <= 30) {
