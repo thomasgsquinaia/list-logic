@@ -23,7 +23,7 @@ public class ex04 {
         System.out.println("Digite a idade do conveniado: ");
         idade = reader.nextInt();
 
-        if(idade < 10) {
+        if (idade < 10) {
             adicional =  valorConvenio + 80f;
             System.out.print(adicional);
         }
@@ -33,6 +33,9 @@ public class ex04 {
             System.out.print(adicional);
         }
 
+        if (idade >= 40 && idade <= 60) {
+            
+        }
 
         reader.close();
     }
