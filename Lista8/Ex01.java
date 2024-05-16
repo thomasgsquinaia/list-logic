@@ -13,7 +13,7 @@ Dada uma seqüência de n números, imprimi-la na ordem inversa à da leitura.
         int n = reader.nextInt();
 
         for (int i = 0; i <= n; i++) {
-            System.out.println(i);
+            System.out.printf("%d ",i);
         }
 
         reader.close();
