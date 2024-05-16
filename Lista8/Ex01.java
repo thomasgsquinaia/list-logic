@@ -11,5 +11,11 @@ Dada uma seqüência de n números, imprimi-la na ordem inversa à da leitura.
         Scanner reader = new Scanner(System.in);
 
         int n = reader.nextInt();
+
+        for (int i = 0; i <= n; i++) {
+            System.out.println(i);
+        }
+
+        reader.close();
     }
 }
